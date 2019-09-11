@@ -11,10 +11,10 @@ const Footer = ()=>{
                     English
                 </div>
 
-                <a href="https://santiment.net/about-santiment/" className={styles.link}>About</a>
-                <a href="https://santiment.net/about-santiment/contact/" className={styles.link}>Contact</a>
-                <a href="https://santiment.net/terms-conditions/" className={styles.link}>Terms</a>
-                <a href="https://app.santiment.net/privacy-policy" className={styles.link}>Privacy</a>
+                <a target="_blank" href="https://santiment.net/about-santiment/" className={styles.link}>About</a>
+                <a target="_blank" href="https://santiment.net/about-santiment/contact/" className={styles.link}>Contact</a>
+                <a target="_blank" href="https://santiment.net/terms-conditions/" className={styles.link}>Terms</a>
+                <a target="_blank" href="https://app.santiment.net/privacy-policy" className={styles.link}>Privacy</a>
 
             </div>
 

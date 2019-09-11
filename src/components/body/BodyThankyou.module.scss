@@ -1,0 +1,47 @@
+@import '~@santiment-network/ui/main';
+@import '~@santiment-network/ui/mixins';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.thankyou {
+  color: var(--mirage);
+  margin-top: 30px;
+  text-align: center;
+
+  @include text('h2')
+}
+
+.description {
+  margin-top: 26px;
+  text-align: center;
+
+  @include text('body-1')
+}
+
+.more {
+  color: var(--waterloo);
+  text-align: center;
+  margin-top: 24px;
+
+  @include text('body-1')
+}
+
+.links {
+  text-align: center;
+  margin-top: 14px;
+  width: 210px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  @include text('body-1');
+
+  color: var(--jungle-green);
+}

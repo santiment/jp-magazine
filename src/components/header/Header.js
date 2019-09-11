@@ -14,15 +14,15 @@ const Header = ()=>{
                     <SmoothDropdownItem
                         trigger={<Button variant='flat' className={styles.productsBtn}>Products</Button>}>
                         <div>
-                            <a key='sanbase' href='https://app.santiment.net'>Sanbase</a>
-                            <a key='sheets' href='https://sheets.santiment.net'>Sheets</a>
-                            <a key='neuro' href='https://neuro.santiment.net'>Neuro</a>
+                            <a target="_blank" key='sanbase' href='https://app.santiment.net'>Sanbase</a>
+                            <a target="_blank" key='sheets' href='https://sheets.santiment.net'>Sheets</a>
+                            <a target="_blank" key='neuro' href='https://neuro.santiment.net'>Neuro</a>
                         </div>
                     </SmoothDropdownItem>
                 </div>
 
                 <a className={styles.link} as='a' href='mailto:support@santiment.net'>Support</a>
-                <a className={styles.borderLink} accent="positive"  as='a' href='app.santiment.net/login'>Sign up</a>
+                <a target="_blank" className={styles.borderLink} accent="positive"  as='a' href='app.santiment.net/login'>Sign up</a>
             </div>
         </div>
     </div>

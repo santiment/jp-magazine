@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
+import { navigate } from "gatsby"
 import cx from 'classnames'
 import { graphql } from 'react-apollo'
-import GoogleAnalytics from 'react-ga'
 import Panel from '@santiment-network/ui/Panel/Panel'
 import Label from '@santiment-network/ui/Label'
 import Button from '@santiment-network/ui/Button'
@@ -45,6 +45,7 @@ class SubscriptionForm extends PureComponent {
                     category: 'User',
                     action: `User requested an email for subscription`
                 })*/
+                navigate('/thankyou')
             })
             .catch(error => {
                 this.setState({ waiting: false })
@@ -87,6 +88,7 @@ class SubscriptionForm extends PureComponent {
                     )}
                     onSubmit={this.onSubmit}
                 >
+                    <Label accent='waterloo' className={styles.label}>Email address</Label>
                     <Input
                         className={styles.subscription__input}
                         placeholder='business@email.com'

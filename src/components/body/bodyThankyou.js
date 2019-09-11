@@ -1,21 +1,18 @@
 import React from "react";
-import SanVideo from "../sanVideo/sanVideo";
-import styles from './Body.module.scss'
+import confetti from './../../images/confetti.svg'
+import styles from './BodyThankyou.module.scss'
 
 const BodyThankYou = ()=>{
     return <div className={styles.container}>
-        <div className={styles.left}>
-            <div className={styles.title}>Santiment invite</div>
-            <div className={styles.header}>
-                Thank you!
-            </div>
-            <div className={styles.offerTitle}>Special offer for (magazine mame) readers:</div>
-            <div className={styles.offers}>
+        <img alt='confetti' src={confetti} className={styles.confetti}/>
+        <div className={styles.thankyou}>Thank You!</div>
 
-            </div>
-        </div>
-        <div  className={styles.right}>
-            <SanVideo/>
+        <div className={styles.description}>Your request has been received. Check your email for next steps.</div>
+
+        <div className={styles.more}>Learn more about the products:</div>
+        <div className={styles.links}>
+            <a target="_blank" className={styles.link} href='https://app.santiment.net'>Sanbase</a>
+            <a target="_blank" className={styles.link} href='https://sheets.santiment.net'>Sansheets</a>
         </div>
     </div>
 }

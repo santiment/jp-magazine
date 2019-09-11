@@ -31,7 +31,7 @@ const FeedbackBlock = () => {
             <br/>
             understand our audience. All information is used
             <br/>
-            consistent with our <a href='https://app.santiment.net/privacy-policy' className={styles.privacy}>privacy policy</a>.
+            consistent with our <a target="_blank" href='https://app.santiment.net/privacy-policy' className={styles.privacy}>privacy policy</a>.
         </div>
     </div>
 }

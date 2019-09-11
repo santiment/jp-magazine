@@ -1,5 +1,5 @@
-@import '~@santiment-network/ui/main.scss';
-@import '~@santiment-network/ui/mixins.scss';
+@import '~@santiment-network/ui/main';
+@import '~@santiment-network/ui/mixins';
 
 .subscription {
   &__error {
@@ -55,4 +55,11 @@
   &__checkbox {
        margin-top: 15px;
    }
+}
+
+.label {
+  margin-right: auto;
+  margin-bottom: 3px;
+
+  @include text('caption')
 }
