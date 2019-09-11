@@ -4,12 +4,12 @@ import ReactDOM from "react-dom";
 import cx from "classnames";
 import "./SmoothDropdown.scss";
 
-const modalRoot = document.getElementById("dd-modal");
+const modalRoot = typeof document !== "undefined" ? document.getElementById("dd-modal") : undefined;
 
 let ddTemplate;
 
 if (modalRoot) {
-  ddTemplate = modalRoot.querySelector("#dd-template").content;
+  ddTemplate = modalRoot ? modalRoot.querySelector("#dd-template").content : undefined;
 }
 
 export const SmoothDropdownContext = React.createContext({
@@ -23,7 +23,7 @@ class SmoothDropdown extends Component {
 
   dropdownWrapperRef = React.createRef();
 
-  ddContainer = ddTemplate.cloneNode(true).firstElementChild;
+  ddContainer = ddTemplate ? ddTemplate.cloneNode(true).firstElementChild : undefined;
 
   ddItemsRef = new WeakMap();
 
@@ -71,6 +71,9 @@ class SmoothDropdown extends Component {
   }
 
   componentWillMount() {
+    if(!this.ddContainer){
+      return
+    }
     this.portalContainer = this.ddContainer.querySelector(".dd__list");
     this.bgNode = this.ddContainer.querySelector(".dd__bg");
     this.arrowNode = this.ddContainer.querySelector(".dd__arrow");
@@ -217,6 +220,10 @@ class SmoothDropdown extends Component {
   }
 
   render() {
+    if(!this.ddContainer){
+      return null
+    }
+
     const { children, className = "", showArrow } = this.props;
 
     const {

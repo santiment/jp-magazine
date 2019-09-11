@@ -43,44 +43,7 @@ module.exports = {
         background_color: `#5275FF`,
         theme_color: `#5275FF`,
         display: `minimal-ui`,
-        icons: [
-          {
-            "src": "src/images/icons/android-icon-36x36.png",
-            "sizes": "36x36",
-            "type": "image/png",
-            "density": "0.75"
-          },
-          {
-            "src": "src/images/icons/android-icon-48x48.png",
-            "sizes": "48x48",
-            "type": "image/png",
-            "density": "1.0"
-          },
-          {
-            "src": "src/images/icons/android-icon-72x72.png",
-            "sizes": "72x72",
-            "type": "image/png",
-            "density": "1.5"
-          },
-          {
-            "src": "src/images/icons/android-icon-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png",
-            "density": "2.0"
-          },
-          {
-            "src": "src/images/icons/android-icon-144x144.png",
-            "sizes": "144x144",
-            "type": "image/png",
-            "density": "3.0"
-          },
-          {
-            "src": "src/images/icons/android-icon-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "density": "4.0"
-          }
-        ], // This path is relative to the root of the site.
+         // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

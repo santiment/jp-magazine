@@ -4,33 +4,9 @@
     <list default="true" id="3bd19fa3-de14-4022-ac33-0522efb3bedd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apollo/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/apollo/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apollo/wrap-root-element.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/apollo/wrap-root-element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StripeProviderSSR.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StripeProviderSSR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/bodyThankyou.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/bodyThankyou.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feedback/FeedbackBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feedback/FeedbackBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sanVideo/sanVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sanVideo/sanVideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/seo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/seo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/smoothDropdown/SmoothDropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smoothDropdown/SmoothDropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/smoothDropdown/SmoothDropdownItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/smoothDropdown/SmoothDropdownItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/subscriptionForm/SubscriptionForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subscriptionForm/SubscriptionForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/subscriptionForm/loginGql.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subscriptionForm/loginGql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/html.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg-form.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bg-form.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/change_language.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/change_language.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/confetti.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/confetti.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon-point.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icon-point.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logo-SAN.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logo-SAN.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/santiment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/santiment.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/thankyou.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/thankyou.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/dates.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568194231891</updated>
       <workItem from="1568194232976" duration="903000" />
-      <workItem from="1568196319573" duration="9302000" />
+      <workItem from="1568196319573" duration="10047000" />
     </task>
     <servers />
   </component>
