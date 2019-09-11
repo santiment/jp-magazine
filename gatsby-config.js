@@ -37,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `jp-magazine starter`,
+        short_name: `santiment gp-magazine`,
         start_url: `/`,
         background_color: `#5275FF`,
         theme_color: `#5275FF`,
