@@ -1,8 +1,5 @@
 import React from "react";
 import styles from "./Footer.module.scss";
-import santiment from "../../images/santiment.svg";
-import SmoothDropdownItem from "../smoothDropdown/SmoothDropdownItem";
-import Button from "@santiment-network/ui/Button";
 import chang_language from './../../images/change_language.svg'
 
 const Footer = ()=>{

@@ -1,0 +1,53 @@
+@import '~@santiment-network/ui/main.scss';
+@import '~@santiment-network/ui/mixins.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.daysFree {
+  @include text('h3');
+
+  color: var(--white);
+  text-align: center;
+  margin-top: 48px;
+}
+
+.form {
+  margin-top: 40px;
+  max-width: 316px;
+}
+
+.explanation {
+  @include text('body-2');
+
+  color: var(--athens);
+  text-align: center;
+  margin-top: 7px;
+  width: 356px;
+}
+
+.description {
+  @include text('body-1');
+
+  text-align: center;
+  color: var(--mystic);
+  margin-top: 42px;
+  max-width: 360px;
+}
+
+.info {
+  @include text('caption');
+
+  color: var(--waterloo);
+  margin-top: 42px;
+  max-width: 298px;
+}
+
+.privacy {
+  color: var(--jungle-green);
+}

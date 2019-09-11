@@ -25,6 +25,9 @@ a:hover {
 
 main {
   min-height: calc(100% - 140px);
+  display: flex;
+  align-items: center;
+  overflow: auto;
 
   background: url('./../images/bg.svg');
 }
@@ -32,7 +35,6 @@ main {
 section {
   max-width: 1140px;
   margin: 0 auto;
-  padding-top: 60px;
 
   @include responsive('tablet') {
     max-width: 768px;

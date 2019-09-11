@@ -6,21 +6,15 @@ import Panel from '@santiment-network/ui/Panel/Panel'
 import Label from '@santiment-network/ui/Label'
 import Button from '@santiment-network/ui/Button'
 import Input from '@santiment-network/ui/Input'
-import Checkboxes from '@santiment-network/ui/Checkboxes'
 import { EMAIL_LOGIN_MUTATION } from './loginGql'
-// import { store } from '../../index'
-// import { showNotification } from '../../actions/rootActions'
 import styles from './SubscriptionForm.module.scss'
 
 const SUBSCRIPTION_FLAG = 'SUBSCRIPTION_FLAG'
 
-const SUBSCRIPTION_LABEL = 'Receive product updates and weekly newsletter'
-
 class SubscriptionForm extends PureComponent {
     state = {
         email: '',
-        error: undefined,
-        hasSubscribed: true
+        error: undefined
     }
 
     componentWillUnmount () {
@@ -29,7 +23,7 @@ class SubscriptionForm extends PureComponent {
 
     onSubmit = e => {
         e.preventDefault()
-        const { email, error, hasSubscribed, waiting } = this.state
+        const { email, error,  waiting } = this.state
 
         if (error || waiting) {
             return
@@ -47,29 +41,13 @@ class SubscriptionForm extends PureComponent {
         emailLogin({ variables: { email } })
             .then(() => {
                 this.setState({ waiting: false })
-                GoogleAnalytics.event({
+                /*GoogleAnalytics.event({
                     category: 'User',
-                    action: `User requested an email for verification ${
-                        hasSubscribed ? 'with' : 'without'
-                    } subscription`
-                })
-                /*store.dispatch(
-                    showNotification({
-                        variant: 'success',
-                        title: `Verification email has been sent to "${email}"`,
-                        dismissAfter: 8000
-                    })
-                )*/
+                    action: `User requested an email for subscription`
+                })*/
             })
             .catch(error => {
                 this.setState({ waiting: false })
-                /*store.dispatch(
-                    showNotification({
-                        variant: 'error',
-                        title: `We got an error while generating verification email. Please try again`,
-                        dismissAfter: 8000
-                    })
-                )*/
             })
     }
 
@@ -79,7 +57,6 @@ class SubscriptionForm extends PureComponent {
         } else {
             localStorage.setItem(SUBSCRIPTION_FLAG, '+')
         }
-        this.setState({ hasSubscribed: !!length })
     }
 
     onEmailChange (email) {
@@ -99,8 +76,7 @@ class SubscriptionForm extends PureComponent {
     }
 
     render () {
-        const { error, waiting, email } = this.state
-        const { hideCheckbox } = this.props
+        const { error, waiting } = this.state
 
         return (
             <>
@@ -113,24 +89,11 @@ class SubscriptionForm extends PureComponent {
                 >
                     <Input
                         className={styles.subscription__input}
-                        placeholder='Enter your email'
+                        placeholder='business@email.com'
                         disabled={waiting}
                         onChange={this.onEmailChangeDebounced}
                         isError={error}
                     />
-                    {!hideCheckbox && (
-                        <Checkboxes
-                            className={styles.subscription__checkbox}
-                            options={[SUBSCRIPTION_LABEL]}
-                            labelOnRight
-                            labelClassName={styles.subscription__label}
-                            defaultSelectedIndexes={[SUBSCRIPTION_LABEL]}
-                            disabledIndexes={
-                                waiting || !email ? [SUBSCRIPTION_LABEL] : undefined
-                            }
-                            onSelect={this.onSelect}
-                        />
-                    )}
                     <Button
                         variant='fill'
                         accent='positive'
@@ -138,7 +101,7 @@ class SubscriptionForm extends PureComponent {
                         disabled={waiting}
                         type='submit'
                     >
-                        {waiting ? 'Waiting...' : 'Get started'}
+                        {waiting ? 'Waiting...' : 'Let’s Go'}
                     </Button>
                     <Panel padding className={styles.subscription__error}>
                         <Label accent='persimmon'>{error}</Label>
