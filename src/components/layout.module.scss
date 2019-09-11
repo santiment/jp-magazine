@@ -1,0 +1,62 @@
+@import '~@santiment-network/ui/main.scss';
+@import '~@santiment-network/ui/mixins.scss';
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body {
+  color: var(--mirage);
+
+  @include text('body-3');
+
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  list-style: none;
+  color: inherit;
+}
+
+a:hover {
+}
+
+main {
+  min-height: calc(100% - 140px);
+
+  background: url('./../images/bg.svg');
+}
+
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  @include responsive('tablet') {
+    max-width: 768px;
+  }
+
+  @include responsive('phone', 'phone-xs') {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+:global(#___gatsby) {
+  overflow-x: hidden;
+  height: 100%;
+
+  > div {
+    height: 100%;
+  }
+
+  @include responsive('laptop') {
+    padding: 0 15px;
+  }
+}
+
+:global(.intercom-namespace .intercom-1tsyd6q) {
+  z-index: 50 !important;
+}
