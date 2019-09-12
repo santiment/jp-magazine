@@ -17,14 +17,14 @@ const Body = () => {
           Spot Opportunities.
         </div>
 
-        <MobileOnly>
+        /*<MobileOnly>
           <>
             <Button className={styles.offerBtn} as='a' href='#reply' accent='positive' variant='fill'>Get special offer</Button>
             <div className={styles.video}>
               {SanVideo}
             </div>
           </>
-        </MobileOnly>
+        </MobileOnly>*/
 
         <div className={styles.magazine}>
           Special offer for (magazine name) readers:
