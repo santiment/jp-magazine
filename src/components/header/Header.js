@@ -44,7 +44,7 @@ export const Projects = () => {
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.container}>
         <SantimentLogo/>
 
@@ -69,7 +69,7 @@ const Header = () => {
           </div>
         </DesktopOnly>
       </div>
-    </div>
+    </header>
   );
 };
 

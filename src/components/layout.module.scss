@@ -20,9 +20,6 @@ body {
   color: inherit;
 }
 
-a:hover {
-}
-
 main {
   min-height: calc(100% - 140px);
   display: flex;
@@ -59,10 +56,6 @@ section {
 
   > div {
     height: 100%;
-  }
-
-  @include responsive('laptop') {
-    padding: 0 15px;
   }
 }
 

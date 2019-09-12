@@ -39,7 +39,7 @@ const Contact = <a
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.left}>
           <MobileOnly>
@@ -85,7 +85,7 @@ const Footer = () => {
           © 2019 Santiment Inc. All rights reserved
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

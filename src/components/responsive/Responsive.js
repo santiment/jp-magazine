@@ -4,7 +4,7 @@ import {mapSizesToProps} from "../../utils/sizes";
 
 const enhance = withSizes(mapSizesToProps)
 
-export const DesktopOnly = enhance(({ children, isDesktop }) =>
+export const DesktopOnly = enhance(({ children, isDesktop = true }) =>
     isDesktop ? children : null
 )
 
@@ -12,7 +12,7 @@ DesktopOnly.propTypes = {
     children: PropTypes.node.isRequired
 }
 
-export const MobileOnly = enhance(({ children, isDesktop }) =>
+export const MobileOnly = enhance(({ children, isDesktop = false }) =>
     isDesktop ? null : children
 )
 
