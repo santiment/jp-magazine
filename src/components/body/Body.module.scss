@@ -16,9 +16,11 @@
 
   @include responsive('tablet', 'phone', 'phone-xs') {
     display: flex;
+    margin: 0;
     flex-direction: column;
     align-items: center;
     width: auto;
+    padding: 0 16px;
   }
 }
 
@@ -39,6 +41,14 @@
   @include text('body-3');
 
   margin-bottom: 8px;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    @include text('body-2');
+
+    margin: 90px 0 0 0;
+    text-align: center;
+    color: $fiord;
+  }
 }
 
 .description {
@@ -47,13 +57,36 @@
   margin-bottom: 32px;
   font-weight: 600;
 
-  color: var(--mirage)
+  color: var(--mirage);
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    text-align: center;
+    margin: 18px 0 0 0;
+
+    @include text('h3');
+
+    font-weight: 600;
+  }
+}
+
+.offerBtn {
+  width: 214px;
+  display: table-cell;
+  height: 46px;
+  text-align: center;
+  margin-top: 42px;
 }
 
 .magazine{
   @include text('body-1');
 
   margin-bottom: 24px;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    @include text('h4');
+    font-weight: 600;
+    margin: 40px 0 0 0;
+  }
 }
 
 .point {
@@ -62,6 +95,23 @@
   align-items: center;
 }
 
+.points {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    margin: 24px 0 74px 0;
+  }
+}
+
 .iconPoint {
   margin-right: 24px;
+}
+
+.video {
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    margin: 146px 0 0 0;
+    width: 100%;
+  }
 }

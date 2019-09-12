@@ -13,29 +13,32 @@ const Dropdown = ({children}) => {
         setOpen(false)}, force ? 0 : 1000)
     const open = () => setOpen(true)
 
-    return <div
-        onMouseLeave={close}
-        onMouseEnter={open}
-    >
+    return <>
         <DesktopOnly>
-            <ContextMenu
-                open={isOpen}
-                onClose={()=>close(true)}
-                onOpen={open}
-                trigger={<div><ProjectsTrigger/></div>}
-                position='bottom'
-                align='start'
-            >
-                {children}
-            </ContextMenu>
+            <div
+                onMouseLeave={close}
+                onMouseEnter={open}>
+                <ContextMenu
+                    open={isOpen}
+                    onClose={()=>close(true)}
+                    onOpen={open}
+                    trigger={<div><ProjectsTrigger/></div>}
+                    position='bottom'
+                    align='start'
+                >
+                    {children}
+                </ContextMenu>
+            </div>
         </DesktopOnly>
         <MobileOnly>
             <>
-                <ProjectsTrigger showArrow isOpen={isOpen} onClick={()=>setOpen(!isOpen)}/>
+                <ProjectsTrigger showArrow isOpen={isOpen} onClick={()=>{
+                    setOpen(!isOpen)
+                }}/>
                 {isOpen && children}
             </>
         </MobileOnly>
-    </div>
+    </>
 }
 
 const ProjectsTrigger = ({onClick, isOpen, showArrow}) => {

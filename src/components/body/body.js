@@ -1,9 +1,10 @@
 import React from "react";
 import FeedbackBlock from "../feedback/FeedbackBlock";
+import Button from '@santiment-network/ui/Button'
 import iconPoint from "./../../images/icon-point.svg";
 import SanVideo from "../sanVideo/sanVideo";
+import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
 import styles from "./Body.module.scss";
-import {DesktopOnly} from "../responsive/Responsive";
 
 const Body = () => {
   return (
@@ -15,6 +16,14 @@ const Body = () => {
           <br />
           Spot Opportunities.
         </div>
+
+        <MobileOnly>
+          <Button className={styles.offerBtn} accent='positive' variant='fill'>Get special offer</Button>
+          <div className={styles.video}>
+            <SanVideo />
+          </div>
+        </MobileOnly>
+
         <div className={styles.magazine}>
           Special offer for (magazine name) readers:
         </div>

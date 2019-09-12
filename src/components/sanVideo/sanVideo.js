@@ -1,9 +1,10 @@
 import React from "react";
+import cx from 'classnames'
 import styles from "./SanVideo.module.scss";
 
-const SanVideo = () => {
+const SanVideo = ({className}) => {
   return (
-    <div className={styles.container}>
+    <div className={cx(styles.container,className)}>
       <iframe
         title="Santiment"
         width="100%"
