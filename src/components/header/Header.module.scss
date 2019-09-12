@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--porcelain);
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    height: 85px;
+  }
 }
 
 .link {

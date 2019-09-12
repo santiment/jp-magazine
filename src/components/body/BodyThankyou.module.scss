@@ -9,14 +9,24 @@
   width: 100%;
 }
 
+.confetti {
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 60px;
+  }
+}
+
 .thankyou {
   color: var(--mirage);
   margin-top: 30px;
   text-align: center;
 
   @include text('h2');
-  
+
   font-weight: 600;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 27px;
+  }
 }
 
 .description {
@@ -31,7 +41,11 @@
   text-align: center;
   margin-top: 24px;
 
-  @include text('body-1')
+  @include text('body-1');
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 32px;
+  }
 }
 
 .links {
@@ -40,6 +54,10 @@
   width: 210px;
   display: flex;
   justify-content: space-around;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin: 24px 0 125px 0;
+  }
 }
 
 .link {
