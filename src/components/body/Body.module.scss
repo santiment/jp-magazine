@@ -55,7 +55,7 @@
 .description {
   @include text('h2');
 
-  margin-bottom: 32px;
+  margin-bottom: 0px;
   font-weight: 600;
 
   color: var(--mirage);
@@ -67,6 +67,13 @@
     @include text('h3');
 
     font-weight: 600;
+  }
+}
+
+.descriptionSecond {
+  margin-bottom: 32px;
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    margin: 0;
   }
 }
 

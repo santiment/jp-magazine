@@ -1,4 +1,5 @@
 import React from "react";
+import cx from 'classnames'
 import FeedbackBlock from "../feedback/FeedbackBlock";
 import Button from '@santiment-network/ui/Button'
 import iconPoint from "./../../images/icon-point.svg";
@@ -7,14 +8,14 @@ import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
 import styles from "./Body.module.scss";
 
 const Body = () => {
-  console.log('v1')
   return (
     <div className={styles.container}>
       <div key="left" className={styles.left}>
         <div className={styles.invite}>Santiment invite</div>
         <div className={styles.description}>
           Manage Risk.
-          <br />
+        </div>
+        <div className={cx(styles.description, styles.descriptionSecond)}>
           Spot Opportunities.
         </div>
 
