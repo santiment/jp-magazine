@@ -4,9 +4,8 @@ import FeedbackBlock from "../feedback/FeedbackBlock";
 import Button from '@santiment-network/ui/Button'
 import iconPoint from "./../../images/icon-point.svg";
 import SanVideo from "../sanVideo/sanVideo";
-import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
 import styles from "./Body.module.scss";
-import {withSizes} from "react-sizes/src";
+import withSizes from "react-sizes";
 import {mapSizesToProps} from "../../utils/sizes";
 
 const Body = ({isDesktop}) => {
