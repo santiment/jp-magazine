@@ -40,7 +40,9 @@ const Body = () => {
         </div>
 
         <DesktopOnly>
-          <SanVideo />
+          <div className={styles.video}>
+            <SanVideo />
+          </div>
         </DesktopOnly>
       </div>
       <div name='reply' key="right" className={styles.right}>
