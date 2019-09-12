@@ -3,7 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="3bd19fa3-de14-4022-ac33-0522efb3bedd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/6d91c86c0fde632ba4cd01062fd9ccfa/59139/gatsby-astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/6d91c86c0fde632ba4cd01062fd9ccfa/af144/gatsby-astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/6d91c86c0fde632ba4cd01062fd9ccfa/b5207/gatsby-astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/6d91c86c0fde632ba4cd01062fd9ccfa/d3809/gatsby-astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/6d91c86c0fde632ba4cd01062fd9ccfa/e22c9/gatsby-astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/6d91c86c0fde632ba4cd01062fd9ccfa/fdbb0/gatsby-astronaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/140/path---index-6a9-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/2011440971.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/285/path---404-html-516-62a-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/307/path---account-530-2d6-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/320/path---dev-404-page-5-f-9-fab-4fLPV3YKksa67QFsnJ09wrWUM.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/425/path---dev-404-page-5-f-9-fab-JmSDYpuFJ3IHUrQCPMK8LZaw.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/453/path---dev-404-page-5-f-9-fab-zEOzrct68BaYGnJWYW43DL4WR0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/506/path---dev-404-page-5-f-9-fab-SpmJIjBa9KxWGq5gTBblKoAu42Y.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/583/path---index-6-d-2-0e9-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/642828755.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/674/path---thankyou-324-71d-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/76/path---email-login-a-65-1a8-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/763/path---dev-404-page-5-f-9-fab-rZtM6VtzKPhgSSCoIzB6iZtfLkA.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/795/path---dev-404-page-5-f-9-fab-N4rdlBwgZM1vxSJFMxcUq0V4HHE.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/820/path---404-22-d-bce-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/858/path---login-email-1-e-9-ba0-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/940/path---dev-404-page-5-f-9-fab-pqVc4KgHtcANbArVGABeCzF1IU.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/d/944/path---login-557-29c-0SUcWyAf8ecbYDsMhQkEfPzV8.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/body/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sanVideo/sanVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sanVideo/sanVideo.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +87,7 @@
       <workItem from="1568196319573" duration="10862000" />
       <workItem from="1568267268951" duration="4011000" />
       <workItem from="1568272064144" duration="16958000" />
-      <workItem from="1568298011995" duration="3965000" />
+      <workItem from="1568298011995" duration="5150000" />
     </task>
     <servers />
   </component>
