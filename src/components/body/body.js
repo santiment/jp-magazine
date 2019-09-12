@@ -7,6 +7,7 @@ import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
 import styles from "./Body.module.scss";
 
 const Body = () => {
+  console.log('v1')
   return (
     <div className={styles.container}>
       <div key="left" className={styles.left}>
@@ -17,14 +18,15 @@ const Body = () => {
           Spot Opportunities.
         </div>
 
-        /*<MobileOnly>
-          <>
+        <MobileOnly>
             <Button className={styles.offerBtn} as='a' href='#reply' accent='positive' variant='fill'>Get special offer</Button>
-            <div className={styles.video}>
-              {SanVideo}
-            </div>
-          </>
-        </MobileOnly>*/
+        </MobileOnly>
+
+        <MobileOnly>
+          <div className={styles.video}>
+            {SanVideo}
+          </div>
+        </MobileOnly>
 
         <div className={styles.magazine}>
           Special offer for (magazine name) readers:
