@@ -6,6 +6,7 @@ const SanVideo = ({className}) => {
   return (
     <div className={cx(styles.container,className)}>
       <iframe
+          className={styles.frame}
         title="Santiment"
         width="100%"
         height="100%"

@@ -27,26 +27,27 @@ main {
   min-height: calc(100% - 140px);
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: auto;
 
-  background: url('./../images/bg.svg') no-repeat center center;
+  background: url('./../images/bg.svg') no-repeat;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     width: 100%;
-    background: url('./../images/bg-mobile.svg');
+
+    background: url('./../images/bg-mobile.svg')  no-repeat ;
+    background-repeat: repeat-x;
   }
 }
 
 section {
   max-width: 1140px;
   width: 100%;
-  margin: 60px auto;
+  margin: 60px;
+  display: flex;
+  align-items: center;
 
-  @include responsive('tablet') {
-    max-width: 768px;
-  }
-
-  @include responsive('phone', 'phone-xs') {
+  @include responsive('phone', 'phone-xs', 'tablet') {
     width: 100%;
     margin: auto;
   }
@@ -67,9 +68,4 @@ section {
 
 :global(.intercom-namespace .intercom-1tsyd6q) {
   z-index: 50 !important;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
 }

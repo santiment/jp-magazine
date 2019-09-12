@@ -18,7 +18,7 @@ const Body = () => {
         </div>
 
         <MobileOnly>
-          <Button className={styles.offerBtn} accent='positive' variant='fill'>Get special offer</Button>
+          <Button className={styles.offerBtn} as='a' href='#reply' accent='positive' variant='fill'>Get special offer</Button>
           <div className={styles.video}>
             <SanVideo />
           </div>
@@ -43,7 +43,7 @@ const Body = () => {
           <SanVideo />
         </DesktopOnly>
       </div>
-      <div key="right" className={styles.right}>
+      <div name='reply' key="right" className={styles.right}>
         <FeedbackBlock />
       </div>
     </div>

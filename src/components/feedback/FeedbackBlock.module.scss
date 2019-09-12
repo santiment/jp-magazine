@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 20px 20px 20px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     padding: 70px 16px;
@@ -41,7 +42,7 @@
   color: var(--athens);
   text-align: center;
   margin-top: 7px;
-  width: 356px;
+  max-width: 356px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     margin-top: 22px;

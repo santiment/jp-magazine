@@ -11,7 +11,8 @@
 }
 
 .left {
-  width: 556px;
+  max-width: 556px;
+  width: 100%;
   margin-right: 100px;
 
   @include responsive('tablet', 'phone', 'phone-xs') {
@@ -19,13 +20,13 @@
     margin: 0;
     flex-direction: column;
     align-items: center;
-    width: auto;
-    padding: 0 16px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
 .right {
-  background: url('./../../images/form-bg.png');
+  background: url('./../../images/form-bg.png') center center;
   margin-left: auto;
   border-radius: 6px;
   width: 487px;
@@ -71,10 +72,13 @@
 
 .offerBtn {
   width: 214px;
-  display: table-cell;
   height: 46px;
   text-align: center;
   margin-top: 42px;
+  justify-content: center;
+  display: flex;
+
+  @include text('body-2')
 }
 
 .magazine{
@@ -86,6 +90,17 @@
     @include text('h4');
     font-weight: 600;
     margin: 40px 0 0 0;
+    padding: 0 16px;
+  }
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    margin: 24px 0 74px 0;
+    padding: 0 16px;
   }
 }
 
@@ -93,16 +108,6 @@
   margin-bottom: 15px;
   display: flex;
   align-items: center;
-}
-
-.points {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  @include responsive('tablet', 'phone', 'phone-xs') {
-    margin: 24px 0 74px 0;
-  }
 }
 
 .iconPoint {
