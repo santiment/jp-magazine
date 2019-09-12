@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bd19fa3-de14-4022-ac33-0522efb3bedd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/form-bg-mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/form-bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/body/Body.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Body.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dropdown/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/Dropdown.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/feedback/FeedbackBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feedback/FeedbackBlock.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/arrow-down.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/arrow-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/arrow-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sanVideo/SanVideo.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sanVideo/SanVideo.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sanVideo/sanVideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sanVideo/sanVideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/subscriptionForm/SubscriptionForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subscriptionForm/SubscriptionForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bg-form.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/images/bg-mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bg-mobile.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bg.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/change_language.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/change_language.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/confetti.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/confetti.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/icon-point.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icon-point.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/santiment-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/santiment-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/santiment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/santiment.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +73,7 @@
       <workItem from="1568194232976" duration="903000" />
       <workItem from="1568196319573" duration="10862000" />
       <workItem from="1568267268951" duration="4011000" />
-      <workItem from="1568272064144" duration="6167000" />
+      <workItem from="1568272064144" duration="10075000" />
     </task>
     <servers />
   </component>

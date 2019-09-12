@@ -26,9 +26,13 @@
   }
 
   &__input {
-       padding: 10px 136px 10px 12px;
-       border: 1px solid var(--porcelain);
-       height: 32px;
+    padding: 10px 136px 10px 12px;
+    border: 1px solid var(--porcelain);
+    height: 32px;
+
+    @include responsive('phone', 'phone-xs', 'tablet') {
+      height: 46px;
+    }
    }
 
   &__btn {
@@ -39,12 +43,13 @@
     display: table-cell;
     color: var(--white);
 
-    @include responsive('phone-xs') {
-        margin-top: 8px;
-        width: 100%;
-        display: block;
-        position: relative;
-        right: 0;
+    @include responsive('phone', 'phone-xs', 'tablet') {
+      margin-top: 38px;
+      width: 100%;
+      display: block;
+      position: relative;
+      right: 0;
+      height: 46px;
     }
   }
 
@@ -61,5 +66,9 @@
   margin-right: auto;
   margin-bottom: 3px;
 
-  @include text('caption')
+  @include text('caption');
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-bottom: 8px;
+  }
 }

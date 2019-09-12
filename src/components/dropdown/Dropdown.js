@@ -42,8 +42,8 @@ const ProjectsTrigger = ({onClick, isOpen, showArrow}) => {
     return <Button onClick={onClick} variant="flat" as='a' className={cx(styles.productsBtn, isOpen && styles.open)}>
         Products
         {showArrow && <>
-            {isOpen && <img className={styles.arrow} src={arrowUp}/>}
-            {!isOpen && <img  className={styles.arrow} src={arrowDown}/>}
+            {isOpen && <img alt='up' className={styles.arrow} src={arrowUp}/>}
+            {!isOpen && <img alt='down' className={styles.arrow} src={arrowDown}/>}
         </>}
 </Button>
 }

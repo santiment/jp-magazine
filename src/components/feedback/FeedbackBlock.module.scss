@@ -7,6 +7,10 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    padding: 70px 16px;
+  }
 }
 
 .daysFree {
@@ -16,11 +20,19 @@
   text-align: center;
   margin-top: 48px;
   font-weight: 600;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 0px;
+  }
 }
 
 .form {
   margin-top: 40px;
   max-width: 316px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 35px;
+  }
 }
 
 .explanation {
@@ -30,6 +42,10 @@
   text-align: center;
   margin-top: 7px;
   width: 356px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 22px;
+  }
 }
 
 .description {
@@ -39,6 +55,10 @@
   color: var(--mystic);
   margin-top: 42px;
   max-width: 360px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 60px;
+  }
 }
 
 .info {
@@ -47,6 +67,12 @@
   color: var(--waterloo);
   margin-top: 42px;
   max-width: 298px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 32px;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .privacy {

@@ -6,5 +6,10 @@
   width: 556px;
   height: 278px;
   border-radius: 6px;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    width: 100%;
+    min-height: 141px;
+  }
 }
 

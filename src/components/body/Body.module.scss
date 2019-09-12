@@ -4,18 +4,35 @@
 .container {
   display: flex;
   width: 100%;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    flex-direction: column;
+  }
 }
 
 .left {
   width: 556px;
   margin-right: 100px;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
 }
 
 .right {
-  background: url('./../../images/bg-form.svg');
+  background: url('./../../images/form-bg.png');
   margin-left: auto;
   border-radius: 6px;
   width: 487px;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    width: 100%;
+    border-radius: 0;
+    background: url('./../../images/form-bg-mobile.svg');
+  }
 }
 
 .invite {

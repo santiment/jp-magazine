@@ -3,6 +3,7 @@ import FeedbackBlock from "../feedback/FeedbackBlock";
 import iconPoint from "./../../images/icon-point.svg";
 import SanVideo from "../sanVideo/sanVideo";
 import styles from "./Body.module.scss";
+import {DesktopOnly} from "../responsive/Responsive";
 
 const Body = () => {
   return (
@@ -29,7 +30,9 @@ const Body = () => {
           </div>
         </div>
 
-        <SanVideo />
+        <DesktopOnly>
+          <SanVideo />
+        </DesktopOnly>
       </div>
       <div key="right" className={styles.right}>
         <FeedbackBlock />

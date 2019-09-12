@@ -12,6 +12,9 @@
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     height: auto;
+    background: var(--mirage);
+    border-top: 0;
+    margin-top: -1px;
   }
 }
 

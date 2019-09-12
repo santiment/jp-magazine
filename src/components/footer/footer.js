@@ -1,8 +1,8 @@
 import React from "react";
-import chang_language from "./../../images/change_language.svg";
-import styles from "./Footer.module.scss";
+//import chang_language from "./../../images/change_language.svg";
 import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
 import {Projects, SantimentLogo} from "../header/Header";
+import styles from "./Footer.module.scss";
 
 const About =
     <a
@@ -23,6 +23,20 @@ const Contact = <a
   Contact
 </a>
 
+/*
+*
+          {false && <DesktopOnly>
+            <div className={styles.lang}>
+              <img
+                  alt="change_lang"
+                  className={styles.langLogo}
+                  src={chang_language}
+              />
+              English
+            </div>
+          </DesktopOnly>}
+* */
+
 const Footer = () => {
   return (
     <div className={styles.footer}>
@@ -32,17 +46,6 @@ const Footer = () => {
             <SantimentLogo white/>
             {About}
           </MobileOnly>
-
-          <DesktopOnly>
-            <div className={styles.lang}>
-              <img
-                  alt="change_lang"
-                  className={styles.langLogo}
-                  src={chang_language}
-              />
-              English
-            </div>
-          </DesktopOnly>
 
           <MobileOnly>
             <Projects/>

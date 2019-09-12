@@ -13,14 +13,14 @@ const envScript = process.env.NODE_ENV === "production" && (
 );
 
 const Layout = ({ children, classes = {} }) => (
-  <>
+  <div className={styles.container}>
     <Header />
-    <>
+    <div>
       {envScript}
       <main className={cx(styles.main, classes.main)}>{children}</main>
-    </>
+    </div>
     <Footer />
-  </>
+  </div>
 );
 
 Layout.propTypes = {
