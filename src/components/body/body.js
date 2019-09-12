@@ -6,8 +6,10 @@ import iconPoint from "./../../images/icon-point.svg";
 import SanVideo from "../sanVideo/sanVideo";
 import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
 import styles from "./Body.module.scss";
+import {withSizes} from "react-sizes/src";
+import {mapSizesToProps} from "../../utils/sizes";
 
-const Body = () => {
+const Body = ({isDesktop}) => {
   return (
     <div className={styles.container}>
       <div key="left" className={styles.left}>
@@ -19,15 +21,12 @@ const Body = () => {
           Spot Opportunities.
         </div>
 
-        <MobileOnly>
-            <Button className={styles.offerBtn} as='a' href='#reply' accent='positive' variant='fill'>Get special offer</Button>
-        </MobileOnly>
+        {!isDesktop &&    <Button className={styles.offerBtn} as='a' href='#reply' accent='positive' variant='fill'>Get special offer</Button>}
 
-        <MobileOnly>
+        {!isDesktop &&
           <div className={styles.video}>
             {SanVideo}
-          </div>
-        </MobileOnly>
+          </div>}
 
         <div className={styles.magazine}>
           Special offer for (magazine name) readers:
@@ -44,11 +43,10 @@ const Body = () => {
           </div>
         </div>
 
-        <DesktopOnly>
+        {isDesktop &&
           <div className={styles.video}>
             {SanVideo}
-          </div>
-        </DesktopOnly>
+          </div>}
       </div>
       <div name='reply' key="right" className={styles.right}>
         <FeedbackBlock />
@@ -57,4 +55,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default withSizes(mapSizesToProps)(Body);
