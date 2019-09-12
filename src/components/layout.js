@@ -12,7 +12,7 @@ const envScript = process.env.NODE_ENV === "production" && (
   </Helmet>
 );
 
-const Layout = ({ children, isAccountPage, classes = {} }) => (
+const Layout = ({ children, classes = {} }) => (
   <>
     <Header />
     <>

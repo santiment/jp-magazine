@@ -1,37 +1,65 @@
 import React from "react";
 import chang_language from "./../../images/change_language.svg";
 import styles from "./Footer.module.scss";
+import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
+import {Projects, SantimentLogo} from "../header/Header";
+
+const About =
+    <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://santiment.net/about-santiment/"
+        className={styles.link}
+    >
+      About
+    </a>
+
+const Contact = <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://santiment.net/about-santiment/contact/"
+    className={styles.link}
+>
+  Contact
+</a>
 
 const Footer = () => {
   return (
-    <div className={styles.header}>
+    <div className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <div className={styles.lang}>
-            <img
-              alt="change_lang"
-              className={styles.langLogo}
-              src={chang_language}
-            />
-            English
-          </div>
+          <MobileOnly>
+            <SantimentLogo white/>
+            {About}
+          </MobileOnly>
 
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://santiment.net/about-santiment/"
-            className={styles.link}
-          >
-            About
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://santiment.net/about-santiment/contact/"
-            className={styles.link}
-          >
-            Contact
-          </a>
+          <DesktopOnly>
+            <div className={styles.lang}>
+              <img
+                  alt="change_lang"
+                  className={styles.langLogo}
+                  src={chang_language}
+              />
+              English
+            </div>
+          </DesktopOnly>
+
+          <MobileOnly>
+            <Projects/>
+            <a
+                className={styles.link}
+                rel="noopener noreferrer"
+                href="mailto:support@santiment.net"
+            >
+              Support
+            </a>
+          </MobileOnly>
+
+          <DesktopOnly>
+            {About}
+            {Contact}
+          </DesktopOnly>
+
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -58,4 +86,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer

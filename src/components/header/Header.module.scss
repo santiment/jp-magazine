@@ -15,7 +15,11 @@
   color: var(--waterloo) !important;
   margin-left: 32px;
 
-  @include text('body-2')
+  @include text('body-2');
+
+  &:hover {
+    color: var(--jungle-green) !important;
+  }
 }
 
 .borderLink {
@@ -32,10 +36,20 @@
   max-width: 1140px;
   width: 100%;
   display: flex;
+  align-items: center;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    justify-content: center;
+  }
 }
 
 .logo {
-  margin-right: auto;
+  height: 26px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    width: 160px;
+    height: 35px;
+  }
 }
 
 .buttons {
@@ -44,13 +58,35 @@
   align-items: center;
 }
 
-.productsBtn {
-  font-size: 16px !important;
-  line-height: 24px !important;;
-  color: var(--waterloo) !important;
+.list {
+  display: flex;
+  flex-direction: column;
 
-  &:hover {
-    color: var(--jungle-green) !important;
+  @include responsive('desktop') {
+    background: var(--white);
+    border: 1px solid var(--porcelain);
+    padding: 8px 9px;
+
+    @include border-box();
+
+    box-shadow: 0px 4px 8px rgba(24, 27, 43, 0.04), 0px 8px 16px rgba(24, 27, 43, 0.05), 0px 12px 32px rgba(24, 27, 43, 0.05);
+    border-radius: $border-radius;
+    width: 112px;
+    height: 111px;
   }
 }
 
+.menuItem {
+  @include responsive('desktop') {
+    padding: 6px 9px;
+    color: var(--mirage) !important;
+    margin: 0;
+
+    @include text('body-3')
+  }
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin: 24px 0 0 0;
+    text-align: center;
+  }
+}

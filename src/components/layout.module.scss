@@ -30,6 +30,13 @@ main {
   overflow: auto;
 
   background: url('./../images/bg.svg');
+
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    width: 100%;
+    padding: 0 15px;
+    background: url('./../images/bg-mobile.svg');
+  }
 }
 
 section {

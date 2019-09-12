@@ -1,7 +1,7 @@
 @import '~@santiment-network/ui/main.scss';
 @import '~@santiment-network/ui/mixins.scss';
 
-.header {
+.footer {
   background: var(--white);
   width: 100%;
   display: flex;
@@ -9,24 +9,37 @@
   align-items: center;
   justify-content: center;
   border-top: 1px solid var(--porcelain);
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    height: auto;
+  }
 }
 
 .container {
   max-width: 1140px;
   width: 100%;
   display: flex;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0;
+    background: var(--mirage);
+  }
 }
 
 .left {
   margin-right: auto;
   display: flex;
   align-items: center;
-}
 
-.lang {
-  display: flex;
-  align-items: center;
-  margin-right: 52px;
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 .right {
@@ -35,7 +48,29 @@
   display: flex;
   align-items: center;
 
-  @include text('body-3')
+  @include text('body-3');
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    color: $fiord;
+    margin-top: 42px;
+  }
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  margin-right: 52px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    color: var(--waterloo);
+    @include text('body-2');
+
+    margin: 32px 0 0 0;
+  }
 }
 
 .link {
@@ -46,5 +81,12 @@
 
   &:hover {
     color: var(--jungle-green);
+  }
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    color: var(--waterloo);
+    @include text('body-2');
+
+    margin: 32px 0 0 0;
   }
 }

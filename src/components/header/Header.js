@@ -1,72 +1,73 @@
 import React from "react";
-import Button from "@santiment-network/ui/Button";
-import SmoothDropdownItem from "../smoothDropdown/SmoothDropdownItem";
-import SmoothDropdown from "../smoothDropdown/SmoothDropdown";
+import cx from 'classnames'
 import santiment from "../../../src/images/santiment.svg";
+import santimentWhite from '../../../src/images/santiment-white.svg'
+import {DesktopOnly} from "../responsive/Responsive";
+import Dropdown from "../dropdown/Dropdown";
 import styles from "./Header.module.scss";
+
+export const SantimentLogo = ({white}) => <img alt="header-logo" src={white ? santimentWhite : santiment } className={styles.logo} />
+
+export const Projects = () => {
+  return <Dropdown>
+    <div className={styles.list}>
+      <a
+          className={cx(styles.link, styles.menuItem)}
+          target="_blank"
+          rel="noopener noreferrer"
+          key="sanbase"
+          href="https://app.santiment.net"
+      >
+        Sanbase
+      </a>
+      <a
+          className={cx(styles.link, styles.menuItem)}
+          target="_blank"
+          rel="noopener noreferrer"
+          key="sheets"
+          href="https://sheets.santiment.net"
+      >
+        Sheets
+      </a>
+      <a
+          className={cx(styles.link, styles.menuItem)}
+          target="_blank"
+          rel="noopener noreferrer"
+          key="neuro"
+          href="https://neuro.santiment.net"
+      >
+        Neuro
+      </a>
+    </div>
+  </Dropdown>
+}
 
 const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.container}>
-        <img alt="header-logo" src={santiment} className={styles.logo} />
+        <SantimentLogo/>
 
-        <div className={styles.buttons}>
-          <SmoothDropdown verticalOffset={0} verticalMotion>
-            <SmoothDropdownItem
-              trigger={
-                <Button variant="flat" className={styles.productsBtn}>
-                  Products
-                </Button>
-              }
+        <DesktopOnly>
+          <div className={styles.buttons}>
+            <Projects/>
+            <a
+                className={styles.link}
+                rel="noopener noreferrer"
+                href="mailto:support@santiment.net"
             >
-              <div>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key="sanbase"
-                  href="https://app.santiment.net"
-                >
-                  Sanbase
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key="sheets"
-                  href="https://sheets.santiment.net"
-                >
-                  Sheets
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key="neuro"
-                  href="https://neuro.santiment.net"
-                >
-                  Neuro
-                </a>
-              </div>
-            </SmoothDropdownItem>
-          </SmoothDropdown>
-
-          <a
-            className={styles.link}
-            rel="noopener noreferrer"
-            href="mailto:support@santiment.net"
-          >
-            Support
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.borderLink}
-            accent="positive"
-            as="a"
-            href="https://app.santiment.net/login"
-          >
-            Sign up
-          </a>
-        </div>
+              Support
+            </a>
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.borderLink}
+                href="https://app.santiment.net/login"
+            >
+              Sign up
+            </a>
+          </div>
+        </DesktopOnly>
       </div>
     </div>
   );

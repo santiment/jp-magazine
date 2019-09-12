@@ -14,7 +14,9 @@
   margin-top: 30px;
   text-align: center;
 
-  @include text('h2')
+  @include text('h2');
+  
+  font-weight: 600;
 }
 
 .description {

@@ -1,0 +1,32 @@
+@import '~@santiment-network/ui/main.scss';
+@import '~@santiment-network/ui/mixins.scss';
+
+.productsBtn {
+  font-size: 16px !important;
+  line-height: 24px !important;;
+  color: var(--waterloo) !important;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--jungle-green) !important;
+  }
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin: 32px 0 0 0;
+    text-align: center;
+    background: var(--mirage);
+    color: var(--waterloo) !important;
+
+    &:hover {
+      color: var(--white) !important;
+    }
+  }
+}
+
+.open {
+  color: var(--white) !important;
+}
+
+.arrow {
+  margin-left: 14px
+}
