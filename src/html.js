@@ -18,15 +18,6 @@ export default function HTML(props) {
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.
         </noscript>
-        <div id="dd-modal">
-          <template id="dd-template">
-            <div className="dd">
-              <div className="dd__list" />
-              <div className="dd__arrow" />
-              <div className="dd__bg" />
-            </div>
-          </template>
-        </div>
         <div
           key={`body`}
           id="___gatsby"

@@ -2,9 +2,7 @@ import React from "react";
 import cx from 'classnames'
 import styles from "./SanVideo.module.scss";
 
-const SanVideo = ({className}) => {
-  return (
-    <div className={cx(styles.container,className)}>
+const SanVideo = (<div className={cx(styles.container)}>
       <iframe
           className={styles.frame}
         title="Santiment"
@@ -15,8 +13,6 @@ const SanVideo = ({className}) => {
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />
-    </div>
-  );
-};
+    </div>)
 
 export default SanVideo;
