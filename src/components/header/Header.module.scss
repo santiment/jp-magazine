@@ -35,13 +35,13 @@
 
   text-align: center;
   display: table-cell;
-  height: 32px;
   width: 118px;
-  padding: 6px 16px;
-  margin-left: 61px;
-  color: var(--jungle-green);
-  border: 1px solid var(--jungle-green);
-  border-radius: $border-radius;
+  margin-left: 49px;
+
+  &:hover {
+    background: var(--jungle-green);
+    color: var(--white);
+  }
 }
 
 .container {

@@ -59,6 +59,9 @@ const Header = () => {
           <Button
               as='a'
               target="_blank"
+              accent='positive'
+              border
+              ghost
               rel="noopener noreferrer"
               className={styles.borderLink}
               href="https://app.santiment.net/login"

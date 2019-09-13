@@ -8,19 +8,22 @@ import styles from "./Dropdown.module.scss";
 
 const Dropdown = ({children, isDesktop}) => {
     const [isOpen, setOpen] = useState(false)
-    const close = (force) => setTimeout(()=>{
-        setOpen(false)}, force ? 0 : 1000)
+    const close = (force) => {
+        setTimeout(()=>{
+            setOpen(false)}, force ? 0 : 1000)
+    }
     const open = () => setOpen(true)
 
     return <>
         {isDesktop &&
-            <div onMouseEnter={open}>
+            <div onMouseEnter={open}
+                 onMouseLeave={close}>
                 <ContextMenu
                     onMouseLeave={close}
                     open={isOpen}
                     onClose={()=>close(true)}
                     onOpen={open}
-                    trigger={<div><ProjectsTrigger/></div>}
+                    trigger={<div><ProjectsTrigger isOpen={isOpen}/></div>}
                     position='bottom'
                     align='start'
                 >

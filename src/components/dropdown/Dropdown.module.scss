@@ -25,7 +25,11 @@
 }
 
 .open {
-  color: var(--white) !important;
+  color: var(--jungle-green) !important;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    color: var(--white) !important;
+  }
 }
 
 .arrow {

@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { navigate } from "gatsby";
 import cx from "classnames";
+import GoogleAnalytics from 'react-ga'
 import { graphql } from "react-apollo";
 import Panel from "@santiment-network/ui/Panel/Panel";
 import Label from "@santiment-network/ui/Label";
@@ -41,10 +42,10 @@ class SubscriptionForm extends PureComponent {
     emailLogin({ variables: { email } })
       .then(() => {
         this.setState({ waiting: false });
-        /*GoogleAnalytics.event({
+        GoogleAnalytics.event({
                     category: 'User',
                     action: `User requested an email for subscription`
-                })*/
+                })
         navigate("/thankyou");
       })
       .catch(error => {
