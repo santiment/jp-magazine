@@ -8,9 +8,9 @@ import Footer from "./footer/footer";
 import styles from "./layout.module.scss";
 
 if (process.env.NODE_ENV === 'production') {
-    GoogleAnalytics.initialize('')
+    GoogleAnalytics.initialize('UA-100571693-13')
 } else {
-    GoogleAnalytics.initialize('', { testMode: true })
+    GoogleAnalytics.initialize('UA-100571693-13', { testMode: true })
 }
 
 const envScript = process.env.NODE_ENV === "production" && (
