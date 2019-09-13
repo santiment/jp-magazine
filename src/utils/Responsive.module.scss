@@ -1,0 +1,14 @@
+@import '~@santiment-network/ui/main.scss';
+@import '~@santiment-network/ui/mixins.scss';
+
+.isMobile {
+  @include responsive('desktop') {
+    display: none !important;
+  }
+}
+
+.isDesktop {
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    display: none !important;
+  }
+}

@@ -1,8 +1,9 @@
 import React from "react";
+import cx from 'classnames'
 //import chang_language from "./../../images/change_language.svg";
-import {DesktopOnly, MobileOnly} from "../responsive/Responsive";
 import {Projects, SantimentLogo} from "../header/Header";
 import styles from "./Footer.module.scss";
+import responsiveStyles from '../../utils/Responsive.module.scss'
 
 const About =
     <a
@@ -42,13 +43,13 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <MobileOnly>
+          <div className={cx(responsiveStyles.isMobile, styles.center)}>
             <SantimentLogo white/>
             {About}
-          </MobileOnly>
+          </div>
 
-          <MobileOnly>
-            <Projects/>
+          <div className={cx(responsiveStyles.isMobile, styles.center)}>
+            {<Projects/>}
             <a
                 className={styles.link}
                 rel="noopener noreferrer"
@@ -56,12 +57,12 @@ const Footer = () => {
             >
               Support
             </a>
-          </MobileOnly>
+          </div>
 
-          <DesktopOnly>
+          <div className={responsiveStyles.isDesktop}>
             {About}
             {Contact}
-          </DesktopOnly>
+          </div>
 
           <a
             target="_blank"

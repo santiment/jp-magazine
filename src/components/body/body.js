@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React  from "react";
 import cx from 'classnames'
 import FeedbackBlock from "../feedback/FeedbackBlock";
 import Button from '@santiment-network/ui/Button'
 import iconPoint from "./../../images/icon-point.svg";
 import SanVideo from "../sanVideo/sanVideo";
 import styles from "./Body.module.scss";
-import withSizes from "react-sizes";
-import {mapSizesToProps} from "../../utils/sizes";
+import responsiveStyles from '../../utils/Responsive.module.scss'
 
 const MobileVideo = () => (<>
   <Button className={styles.offerBtn} as='a' href='#reply' accent='positive' variant='fill'>Get special offer</Button>
@@ -16,14 +15,7 @@ const MobileVideo = () => (<>
   </div>
 </>)
 
-const Body = ({isDesktop}) => {
-
-  const [show, setShow] = useState(false)
-
-  useEffect(()=>{
-    !show && setShow(true)
-  })
-
+const Body = () => {
   return (
     <div className={styles.container}>
       <div key="left" className={styles.left}>
@@ -35,7 +27,9 @@ const Body = ({isDesktop}) => {
           Spot Opportunities.
         </div>
 
-        {show && !isDesktop && <MobileVideo/>}
+        <div className={responsiveStyles.isMobile}>
+          <MobileVideo/>
+        </div>
 
         <div className={styles.magazine}>
           Special offer for (magazine name) readers:
@@ -52,10 +46,9 @@ const Body = ({isDesktop}) => {
           </div>
         </div>
 
-        {show && isDesktop &&
-          <div className={styles.video}>
+          <div className={cx(styles.video, responsiveStyles.isDesktop)}>
             {SanVideo}
-          </div>}
+          </div>
       </div>
       <div name='reply' key="right" className={styles.right}>
         <FeedbackBlock />
@@ -64,4 +57,4 @@ const Body = ({isDesktop}) => {
   );
 };
 
-export default withSizes(mapSizesToProps)(Body);
+export default Body;
