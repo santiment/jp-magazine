@@ -27,7 +27,7 @@ const Body = () => {
           Spot Opportunities.
         </div>
 
-        <div className={responsiveStyles.isMobile}>
+        <div className={cx(responsiveStyles.isMobile, styles.centered)}>
           <MobileVideo/>
         </div>
 

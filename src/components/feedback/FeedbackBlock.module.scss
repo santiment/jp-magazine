@@ -50,12 +50,12 @@
 }
 
 .description {
-  @include text('body-1');
+  @include text('body-2');
 
   text-align: center;
   color: var(--mystic);
   margin-top: 42px;
-  max-width: 360px;
+  max-width: 316px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     margin-top: 60px;

@@ -3,13 +3,13 @@ import cx from 'classnames'
 import santiment from "../../../src/images/santiment.svg";
 import santimentWhite from '../../../src/images/santiment-white.svg'
 import Dropdown from "../dropdown/Dropdown";
-import styles from "./Header.module.scss";
+import Button from '@santiment-network/ui/Button'
 import responsiveStyles from '../../utils/Responsive.module.scss'
-import {isDesktop} from "react-sizes/src/presets";
+import styles from "./Header.module.scss";
 
 export const SantimentLogo = ({white}) => <img alt="header-logo" src={white ? santimentWhite : santiment } className={styles.logo} />
 
-export const Projects = ({idDesktop}) => (<Dropdown idDesktop={idDesktop}>
+export const Projects = ({isDesktop}) => (<Dropdown isDesktop={isDesktop}>
     <div className={styles.list}>
       <a
           className={cx(styles.link, styles.menuItem)}
@@ -48,7 +48,7 @@ const Header = () => {
         <SantimentLogo/>
 
         <div className={cx(styles.buttons, responsiveStyles.isDesktop)}>
-          {<Projects idDesktop={isDesktop}/>}
+          {<Projects isDesktop={true}/>}
           <a
               className={styles.link}
               rel="noopener noreferrer"
@@ -56,14 +56,15 @@ const Header = () => {
           >
             Support
           </a>
-          <a
+          <Button
+              as='a'
               target="_blank"
               rel="noopener noreferrer"
               className={styles.borderLink}
               href="https://app.santiment.net/login"
           >
             Sign up
-          </a>
+          </Button>
         </div>
       </div>
     </header>

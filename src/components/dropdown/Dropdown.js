@@ -6,18 +6,17 @@ import arrowUp from './../../images/arrow-up.svg'
 import arrowDown from './../../images/arrow-down.svg'
 import styles from "./Dropdown.module.scss";
 
-const Dropdown = ({children, idDesktop}) => {
+const Dropdown = ({children, isDesktop}) => {
     const [isOpen, setOpen] = useState(false)
     const close = (force) => setTimeout(()=>{
         setOpen(false)}, force ? 0 : 1000)
     const open = () => setOpen(true)
 
     return <>
-        {idDesktop && <div>
-            <div
-                onMouseLeave={close}
-                onMouseEnter={open}>
+        {isDesktop &&
+            <div onMouseEnter={open}>
                 <ContextMenu
+                    onMouseLeave={close}
                     open={isOpen}
                     onClose={()=>close(true)}
                     onOpen={open}
@@ -27,9 +26,8 @@ const Dropdown = ({children, idDesktop}) => {
                 >
                     {children}
                 </ContextMenu>
-            </div>
-        </div>}
-        {!idDesktop && <div>
+            </div>}
+        {!isDesktop && <div>
             <>
                 <ProjectsTrigger showArrow isOpen={isOpen} onClick={()=>{
                     setOpen(!isOpen)

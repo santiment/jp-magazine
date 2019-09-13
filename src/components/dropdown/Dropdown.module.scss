@@ -2,7 +2,7 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .productsBtn {
-  font-size: 16px !important;
+  font-size: 14px !important;
   line-height: 24px !important;;
   color: var(--waterloo) !important;
   cursor: pointer;
@@ -12,6 +12,7 @@
   }
 
   @include responsive('phone', 'phone-xs', 'tablet') {
+    font-size: 16px !important;
     margin: 32px 0 0 0;
     text-align: center;
     background: var(--mirage);

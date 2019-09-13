@@ -19,17 +19,25 @@
   color: var(--waterloo) !important;
   margin-left: 32px;
 
-  @include text('body-2');
+  @include text('body-3');
 
   &:hover {
     color: var(--jungle-green) !important;
   }
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    @include text('body-2');
+  }
 }
 
 .borderLink {
-  @include text('body-2');
+  @include text('body-3');
 
-  padding: 10px 20px;
+  text-align: center;
+  display: table-cell;
+  height: 32px;
+  width: 118px;
+  padding: 6px 16px;
   margin-left: 61px;
   color: var(--jungle-green);
   border: 1px solid var(--jungle-green);
