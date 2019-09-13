@@ -24,20 +24,6 @@ const Contact = <a
   Contact us
 </a>
 
-/*
-*
-          {false && <DesktopOnly>
-            <div className={styles.lang}>
-              <img
-                  alt="change_lang"
-                  className={styles.langLogo}
-                  src={chang_language}
-              />
-              English
-            </div>
-          </DesktopOnly>}
-* */
-
 const Footer = () => {
   return (
     <footer className={styles.footer}>

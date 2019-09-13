@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bd19fa3-de14-4022-ac33-0522efb3bedd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/Responsive.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dropdown/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dropdown/Dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/responsive/Responsive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/subscriptionForm/SubscriptionForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/subscriptionForm/SubscriptionForm.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
