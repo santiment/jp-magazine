@@ -20,7 +20,7 @@ const Contact = <a
     href="https://santiment.net/about-santiment/contact/"
     className={styles.link}
 >
-  Contact
+  Contact us
 </a>
 
 /*
