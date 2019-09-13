@@ -74,7 +74,7 @@
   display: flex;
   flex-direction: column;
 
-  @include responsive('desktop') {
+  @include responsive('desktop', 'laptop') {
     background: var(--white);
     border: 1px solid var(--porcelain);
     padding: 8px 9px;
@@ -89,7 +89,7 @@
 }
 
 .menuItem {
-  @include responsive('desktop') {
+  @include responsive('desktop', 'laptop') {
     padding: 6px 9px;
     color: var(--mirage) !important;
     margin: 0;

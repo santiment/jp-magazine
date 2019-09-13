@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   border-top: 1px solid var(--porcelain);
+  padding: 0 20px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     height: auto;

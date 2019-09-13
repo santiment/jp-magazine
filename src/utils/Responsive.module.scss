@@ -2,7 +2,7 @@
 @import '~@santiment-network/ui/mixins.scss';
 
 .isMobile {
-  @include responsive('desktop') {
+  @include responsive('desktop', 'laptop') {
     display: none !important;
   }
 }
