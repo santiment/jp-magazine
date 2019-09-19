@@ -7,15 +7,14 @@ import Header from "./header/Header";
 import Footer from "./footer/footer";
 import styles from "./layout.module.scss";
 
-/*
+
 if (typeof window !== "undefined") {
     require("smooth-scroll")('a[href*="#"]',{
-        speed: 100,
+        speed: 800,
         speedAsDuration: true,
         easing: 'easeInOutCubic'
     })
 }
-*/
 
 if (process.env.NODE_ENV === "production") {
   GoogleAnalytics.initialize("UA-100571693-13");

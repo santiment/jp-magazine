@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes} style={{ height: "100%" }}>
+    <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes} style={{ height: "100%" }}>
+      <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled.

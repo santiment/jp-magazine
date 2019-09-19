@@ -2,12 +2,22 @@
 @import '~@santiment-network/ui/mixins.scss';
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
+html{
+  overflow-y: scroll;
+
+  @include responsive('desktop', 'laptop') {
+    height: 100%;
+  }
+}
+
 body {
   color: var(--mirage);
 
   @include text('body-3');
 
-  height: 100%;
+  @include responsive('desktop', 'laptop') {
+    height: 100%;
+  }
 }
 
 * {

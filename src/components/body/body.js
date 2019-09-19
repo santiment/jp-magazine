@@ -18,15 +18,15 @@ const Body = () => {
         <div className={cx(styles.line, responsiveStyles.isDesktop)}></div>
         <div className={cx(styles.scrollBlock, responsiveStyles.isMobile)}>
           <div>Scroll to explore</div>
-          <a
-            href="#welcome"
+          <Link
+            to="#welcome"
             className={styles.scrollIcon}
           >
             <img
               alt="scrollBtn"
               src={scrollDown}
             />
-          </a>
+          </Link>
         </div>
 
         <h1 id="welcome" className={styles.welcome}>
