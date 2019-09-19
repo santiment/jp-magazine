@@ -1,0 +1,17 @@
+{
+  "app.header.products": "ラボ",
+  "app.header.support": "サポート",
+  "app.header.signup": "サインアップ",
+  "app.header.products.sanbase": "SANベース",
+  "app.header.products.sheets": "SANベース",
+  "app.header.products.neuro": "ニューロ",
+
+  "app.footer.about": "Santimentについて",
+  "app.footer.langs.en": "英語",
+  "app.footer.langs.jp": "日本語",
+  "app.footer.contact": "お問いあわせ先",
+  "app.footer.support": "サポート",
+  "app.footer.terms": "契約条件",
+  "app.footer.privacy": "プライバシー",
+  "app.footer.rights": "Santiment, Inc. 無断複写・転載を禁じます。"
+}

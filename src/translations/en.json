@@ -1,0 +1,17 @@
+{
+  "app.header.products": "Products",
+  "app.header.support": "Support",
+  "app.header.signup": "Sign up",
+  "app.header.products.sanbase": "Sanbase",
+  "app.header.products.sheets": "Sheets",
+  "app.header.products.neuro": "Neuro",
+
+  "app.footer.about": "About",
+  "app.footer.langs.en": "English",
+  "app.footer.langs.jp": "Japanese",
+  "app.footer.contact": "Contact us",
+  "app.footer.support": "Support",
+  "app.footer.terms": "Terms",
+  "app.footer.privacy": "Privacy",
+  "app.footer.rights": "Santiment Inc. All rights reserved"
+}
