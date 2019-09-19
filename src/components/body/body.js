@@ -41,7 +41,7 @@ const Body = () => {
         </div>
 
         <div className={styles.explanation}>
-          Plus, if you’re a developer ready to build your own applications, a robust <a  target="_blank" rel="noopener noreferrer" className={styles.link} href='https://help.santiment.net/en/collections/1488702-metrics-explained#api'>API</a> is available to pump reliable, quickly accessible data into whatever you create.
+          Plus, if you’re a developer ready to build your own applications, a robust <a  target="_blank" rel="noopener noreferrer" className={styles.link} href='https://neuro.santiment.net'>API</a> is available to pump reliable, quickly accessible data into whatever you create.
         </div>
 
         <div className={styles.explanation}>
