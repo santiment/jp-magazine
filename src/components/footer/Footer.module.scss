@@ -76,6 +76,7 @@
   display: flex;
   align-items: center;
   margin-right: 40px;
+  color: var(--waterloo);
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     color: var(--waterloo);

@@ -45,7 +45,7 @@ const Body = () => {
         </div>
 
         <div className={styles.explanation}>
-          For general information, learn more at <a href='https://santiment.net/jp/' className={styles.link}>santiment.net/jp/</a>.
+          For general information, learn more at <a target="_blank" rel="noopener noreferrer" href='https://santiment.net/jp/' className={styles.link}>santiment.net/jp/</a>.
         </div>
 
       </div>
