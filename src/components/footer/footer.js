@@ -2,11 +2,8 @@ import React from "react";
 import cx from "classnames";
 import chang_language from "./../../images/change_language.svg";
 import { Projects, SantimentLogo } from "../header/Header";
-import tr from "../../translations/translate";
 import styles from "./Footer.module.scss";
 import responsiveStyles from "../../utils/Responsive.module.scss";
-import Dropdown from "../dropdown/Dropdown";
-import dropdownStyles from "../dropdown/Dropdown.module.scss";
 
 const About = (
   <a
@@ -15,40 +12,16 @@ const About = (
     href="https://santiment.net/about-santiment/"
     className={styles.link}
   >
-    {tr('app.footer.about')}
+    About
   </a>
 );
 
-const Lang = ({isDesktop, showArrow}) => {
-
-  const lang = localStorage.getItem('lang')
-
-  const setLang = (lang) => {
-    if(localStorage.getItem('lang') === lang){
-      return
-    }
-
-    localStorage.setItem('lang', lang)
-    window.location.reload()
-  }
-
-  return <Dropdown position='top' showArrow={showArrow} title={
-    <div className={styles.lang}>
-      <img alt="change_lang" className={styles.langLogo} src={chang_language} />
-      {lang === 'en' ? tr('app.footer.langs.en') : tr('app.footer.langs.jp')}
-    </div>
-  } isDesktop={isDesktop}>
-    <div className={dropdownStyles.list}>
-      <div onClick={()=>setLang('en')} className={cx(styles.link, dropdownStyles.menuItem)}>
-        {tr('app.footer.langs.en')}
-      </div>
-      <div onClick={()=>setLang('ja')} className={cx(styles.link, dropdownStyles.menuItem)}>
-        {tr('app.footer.langs.jp')}
-      </div>
-    </div>
-  </Dropdown>
-}
-
+const Lang = (
+  <>
+    <img alt="change_lang" className={styles.langLogo} src={chang_language} />
+    English
+  </>
+);
 
 const Contact = (
   <a
@@ -57,7 +30,7 @@ const Contact = (
     href="https://santiment.net/about-santiment/contact/"
     className={styles.link}
   >
-    {tr('app.footer.contact')}
+    Contact us
   </a>
 );
 
@@ -72,18 +45,18 @@ const Footer = () => {
           </div>
 
           <div className={cx(responsiveStyles.isMobile, styles.center)}>
-            {<Projects showArrow />}
+            {<Projects />}
             <a
               className={styles.link}
               rel="noopener noreferrer"
               href="mailto:support@santiment.net"
             >
-              {tr('app.footer.support')}
+              Support
             </a>
           </div>
 
-          <div className={cx( responsiveStyles.isDesktop)}>
-            {<Lang isDesktop={true} showArrow={false}/>}
+          <div className={cx(styles.lang, responsiveStyles.isDesktop)}>
+            {Lang}
           </div>
 
           <div className={responsiveStyles.isDesktop}>
@@ -97,7 +70,7 @@ const Footer = () => {
             href="https://santiment.net/terms-conditions/"
             className={styles.link}
           >
-            {tr('app.footer.terms')}
+            Terms
           </a>
           <a
             target="_blank"
@@ -105,16 +78,16 @@ const Footer = () => {
             href="https://app.santiment.net/privacy-policy"
             className={styles.link}
           >
-            {tr('app.footer.privacy')}
+            Privacy
           </a>
 
-          <div className={cx(responsiveStyles.isMobile)}>
-            {<Lang showArrow={false}/>}
+          <div className={cx(styles.lang, responsiveStyles.isMobile)}>
+            {Lang}
           </div>
         </div>
 
         <div className={styles.right}>
-          © {new Date().getFullYear()} {tr('app.footer.rights')}
+          © {new Date().getFullYear()} Santiment Inc. All rights reserved
         </div>
       </div>
     </footer>

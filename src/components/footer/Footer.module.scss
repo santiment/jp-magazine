@@ -84,19 +84,18 @@
 
     flex-direction: row-reverse;
 
-    margin:  0;
+    margin: 32px 0 0 0;
   }
 }
 
 .link {
   color: var(--waterloo);
   margin-right: 32px;
-  cursor: pointer;
 
   @include text('body-3');
 
   &:hover {
-    color: var(--jungle-green) !important;
+    color: var(--jungle-green);
   }
 
   @include responsive('phone', 'phone-xs', 'tablet') {

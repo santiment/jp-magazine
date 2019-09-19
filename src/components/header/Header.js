@@ -1,10 +1,8 @@
 import React from "react";
 import cx from "classnames";
-import tr from "../../translations/translate";
 import santiment from "../../../src/images/santiment.svg";
 import santimentWhite from "../../../src/images/santiment-white.svg";
 import Dropdown from "../dropdown/Dropdown";
-import dropdownStyles from "../dropdown/Dropdown.module.scss";
 import Button from "@santiment-network/ui/Button";
 import responsiveStyles from "../../utils/Responsive.module.scss";
 import styles from "./Header.module.scss";
@@ -18,34 +16,34 @@ export const SantimentLogo = ({ white }) => (
 );
 
 export const Projects = ({ isDesktop }) => (
-  <Dropdown title={tr('app.header.products')} isDesktop={isDesktop}>
-    <div className={dropdownStyles.list}>
+  <Dropdown isDesktop={isDesktop}>
+    <div className={styles.list}>
       <a
-        className={cx(styles.link, dropdownStyles.menuItem)}
+        className={cx(styles.link, styles.menuItem)}
         target="_blank"
         rel="noopener noreferrer"
         key="sanbase"
         href="https://app.santiment.net"
       >
-        {tr('app.header.products.sanbase')}
+        Sanbase
       </a>
       <a
-        className={cx(styles.link, dropdownStyles.menuItem)}
+        className={cx(styles.link, styles.menuItem)}
         target="_blank"
         rel="noopener noreferrer"
         key="sheets"
         href="https://sheets.santiment.net"
       >
-        {tr('app.header.products.sheets')}
+        Sheets
       </a>
       <a
-        className={cx(styles.link, dropdownStyles.menuItem)}
+        className={cx(styles.link, styles.menuItem)}
         target="_blank"
         rel="noopener noreferrer"
         key="neuro"
         href="https://neuro.santiment.net"
       >
-        {tr('app.header.products.neuro')}
+        Neuro
       </a>
     </div>
   </Dropdown>
@@ -64,7 +62,7 @@ const Header = () => {
             rel="noopener noreferrer"
             href="mailto:support@santiment.net"
           >
-            {tr('app.header.support')}
+            Support
           </a>
           <Button
             as="a"
@@ -75,7 +73,7 @@ const Header = () => {
             className={styles.borderLink}
             href="https://app.santiment.net/login"
           >
-            {tr('app.header.signup')}
+            Sign up
           </Button>
         </div>
       </div>
