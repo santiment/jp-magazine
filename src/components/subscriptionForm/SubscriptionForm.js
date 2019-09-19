@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import { navigate } from "gatsby";
 import cx from "classnames";
-import GoogleAnalytics from 'react-ga'
+import GoogleAnalytics from "react-ga";
 import { graphql } from "react-apollo";
 import Label from "@santiment-network/ui/Label";
 import Button from "@santiment-network/ui/Button";
@@ -23,7 +23,7 @@ class SubscriptionForm extends PureComponent {
 
   onSubmit = e => {
     e.preventDefault();
-    const { email, error, message = '', waiting } = this.state;
+    const { email, error, message = "", waiting } = this.state;
 
     if (error || waiting) {
       return;
@@ -42,9 +42,9 @@ class SubscriptionForm extends PureComponent {
       .then(() => {
         this.setState({ waiting: false });
         GoogleAnalytics.event({
-                    category: 'User',
-                    action: `User requested an email for subscription`
-                })
+          category: "User",
+          action: `User requested an email for subscription`
+        });
         navigate("/thankyou");
       })
       .catch(error => {
@@ -68,11 +68,11 @@ class SubscriptionForm extends PureComponent {
       error = "Invalid email address";
     }
 
-    this.setState({...this.state, email, error });
+    this.setState({ ...this.state, email, error });
   }
 
   onMessageChange(message) {
-    this.setState({...this.state, message})
+    this.setState({ ...this.state, message });
   }
 
   onEmailChangeDebounced = ({ currentTarget: { value } }) => {
@@ -82,7 +82,10 @@ class SubscriptionForm extends PureComponent {
 
   onMessageChangedDebounced = ({ currentTarget: { value } }) => {
     clearTimeout(this.messageChangeTimeout);
-    this.messageChangeTimeout = setTimeout(() => this.onMessageChange(value), 500);
+    this.messageChangeTimeout = setTimeout(
+      () => this.onMessageChange(value),
+      500
+    );
   };
 
   render() {
@@ -102,19 +105,28 @@ class SubscriptionForm extends PureComponent {
               Email address <span className={styles.requiredSuffix}>*</span>
             </Label>
             <Input
-                className={styles.subscription__input}
-                placeholder="business@email.com"
-                disabled={waiting}
-                onChange={this.onEmailChangeDebounced}
-                isError={error}
+              className={styles.subscription__input}
+              placeholder="business@email.com"
+              disabled={waiting}
+              onChange={this.onEmailChangeDebounced}
+              isError={error}
             />
-            {error && <Label accent="persimmon" className={styles.formError}>{error}</Label>}
+            {error && (
+              <Label accent="persimmon" className={styles.formError}>
+                {error}
+              </Label>
+            )}
           </div>
 
           <Label accent="waterloo" className={styles.label}>
             Message
           </Label>
-          <textarea placeholder='Type your message here...' disabled={waiting} onChange={this.onMessageChangedDebounced} className={styles.messageField}></textarea>
+          <textarea
+            placeholder="Type your message here..."
+            disabled={waiting}
+            onChange={this.onMessageChangedDebounced}
+            className={styles.messageField}
+          ></textarea>
           <Button
             variant="fill"
             accent="positive"
@@ -125,7 +137,9 @@ class SubscriptionForm extends PureComponent {
             {waiting ? "Waiting..." : "Let’s Go"}
           </Button>
 
-          <div className={styles.requiredExplanation}><span className={styles.requiredSuffix}>*</span> Required field</div>
+          <div className={styles.requiredExplanation}>
+            <span className={styles.requiredSuffix}>*</span> Required field
+          </div>
         </form>
       </>
     );

@@ -1,38 +1,38 @@
 import React from "react";
-import cx from 'classnames'
+import cx from "classnames";
 import chang_language from "./../../images/change_language.svg";
-import {Projects, SantimentLogo} from "../header/Header";
+import { Projects, SantimentLogo } from "../header/Header";
 import styles from "./Footer.module.scss";
-import responsiveStyles from '../../utils/Responsive.module.scss'
+import responsiveStyles from "../../utils/Responsive.module.scss";
 
+const About = (
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://santiment.net/about-santiment/"
+    className={styles.link}
+  >
+    About
+  </a>
+);
 
-const About =
-    <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://santiment.net/about-santiment/"
-        className={styles.link}
-    >
-      About
-    </a>
+const Lang = (
+  <>
+    <img alt="change_lang" className={styles.langLogo} src={chang_language} />
+    English
+  </>
+);
 
-const Lang = <>
-  <img
-      alt="change_lang"
-      className={styles.langLogo}
-      src={chang_language}
-  />
-  English
-</>
-
-const Contact = <a
+const Contact = (
+  <a
     target="_blank"
     rel="noopener noreferrer"
     href="https://santiment.net/about-santiment/contact/"
     className={styles.link}
->
-  Contact us
-</a>
+  >
+    Contact us
+  </a>
+);
 
 const Footer = () => {
   return (
@@ -40,16 +40,16 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.left}>
           <div className={cx(responsiveStyles.isMobile, styles.center)}>
-            <SantimentLogo white/>
+            <SantimentLogo white />
             {About}
           </div>
 
           <div className={cx(responsiveStyles.isMobile, styles.center)}>
-            {<Projects/>}
+            {<Projects />}
             <a
-                className={styles.link}
-                rel="noopener noreferrer"
-                href="mailto:support@santiment.net"
+              className={styles.link}
+              rel="noopener noreferrer"
+              href="mailto:support@santiment.net"
             >
               Support
             </a>
@@ -94,4 +94,4 @@ const Footer = () => {
   );
 };
 
-export default Footer
+export default Footer;
