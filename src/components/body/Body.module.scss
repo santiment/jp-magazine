@@ -130,6 +130,7 @@
 .explanation {
   @include text('body-2');
   margin-top: 18px;
+  width: 100%;
 
   @include responsive('tablet', 'phone', 'phone-xs') {
     margin-top: 32px;
