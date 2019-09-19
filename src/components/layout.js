@@ -7,6 +7,7 @@ import Header from "./header/Header";
 import Footer from "./footer/footer";
 import styles from "./layout.module.scss";
 
+/*
 if (typeof window !== "undefined") {
     require("smooth-scroll")('a[href*="#"]',{
         speed: 100,
@@ -14,6 +15,7 @@ if (typeof window !== "undefined") {
         easing: 'easeInOutCubic'
     })
 }
+*/
 
 if (process.env.NODE_ENV === "production") {
   GoogleAnalytics.initialize("UA-100571693-13");
