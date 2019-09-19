@@ -1,8 +1,8 @@
 import gql from "graphql-tag";
 
-export const EMAIL_LOGIN_MUTATION = gql`
-  mutation emailLogin($email: String!, $consent: String) {
-    emailLogin(email: $email, consent: $consent) {
+export const SUBSCRIPTION_MUTATION = gql`
+  mutation sendPromoCoupon($email: String!, $message: String) {
+    sendPromoCoupon(email: $email, message: $message) {
       success
     }
   }

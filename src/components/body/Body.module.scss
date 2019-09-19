@@ -11,7 +11,7 @@
 }
 
 .left {
-  max-width: 556px;
+  max-width: 466px;
   width: 100%;
   margin-right: 100px;
 
@@ -22,11 +22,12 @@
     align-items: center;
     width: 100%;
     max-width: 100%;
+    padding: 0 17px 80px 17px;
   }
 }
 
 .right {
-  background: url('./../../images/form-bg.png') center center;
+  background: url('./../../images/form-bg.svg') no-repeat center center;
   margin-left: auto;
   border-radius: 6px;
   width: 487px;
@@ -35,20 +36,6 @@
     width: 100%;
     border-radius: 0;
     background: url('./../../images/form-bg-mobile.svg');
-  }
-}
-
-.invite {
-  @include text('body-3');
-
-  margin-bottom: 8px;
-
-  @include responsive('tablet', 'phone', 'phone-xs') {
-    @include text('body-2');
-
-    margin: 90px 0 0 0;
-    text-align: center;
-    color: $fiord;
   }
 }
 
@@ -62,14 +49,14 @@
 .description {
   @include text('h2');
 
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-weight: 600;
 
   color: var(--mirage);
 
   @include responsive('tablet', 'phone', 'phone-xs') {
     text-align: center;
-    margin: 18px 0 0 0;
+    margin: 178px 0 0 0;
 
     @include text('h3');
 
@@ -78,9 +65,11 @@
 }
 
 .descriptionSecond {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+
   @include responsive('tablet', 'phone', 'phone-xs') {
     margin: 0;
+    font-weight: normal;
   }
 }
 
@@ -95,44 +84,74 @@
   @include text('body-2')
 }
 
-.magazine{
+.welcome {
   @include text('body-1');
 
-  margin-bottom: 24px;
+  margin-top: 32px;
+  color: var(--mirage);
 
   @include responsive('tablet', 'phone', 'phone-xs') {
-    @include text('h4');
-    font-weight: 600;
-    margin: 40px 0 0 0;
-    padding: 0 16px;
+    @include text('h3');
+    margin-top: 98px;
   }
 }
 
-.points {
+.welcomeMagazine {
+  @include text('body-1');
+
+  font-weight: 600 !important;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    @include text('h3');
+  }
+}
+
+.looking {
+  @include text('body-1');
+
+  margin-top: 12px;
+  margin-bottom: 14px;
+  color: var(--mirage);
+
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  background: var(--jungle-green);
+  border-radius: 2px;
+}
+
+.explanation {
+  @include text('body-2');
+  margin-top: 18px;
+
+  @include responsive('tablet', 'phone', 'phone-xs') {
+    margin-top: 32px;
+  }
+}
+
+.link {
+  color: var(--jungle-green);
+}
+
+.scrollBlock {
+  @include text('h4');
+  color: var(--mirage);
+
+  width: 100%;
   display: flex;
   flex-direction: column;
-
-  @include responsive('tablet', 'phone', 'phone-xs') {
-    margin: 24px 0 74px 0;
-    padding: 0 16px;
-  }
-}
-
-.point {
-  margin-bottom: 15px;
-  display: flex;
   align-items: center;
-
-  @include text('body-1')
+  justify-content: center;
+  margin-top: 113px;
 }
 
-.iconPoint {
-  margin-right: 24px;
-}
-
-.video {
-  @include responsive('tablet', 'phone', 'phone-xs') {
-    margin: 146px 0 0 0;
-    width: 100%;
-  }
+.scrollIcon{
+  margin-top: 16px;
 }

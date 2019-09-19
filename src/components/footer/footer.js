@@ -1,9 +1,10 @@
 import React from "react";
 import cx from 'classnames'
-//import chang_language from "./../../images/change_language.svg";
+import chang_language from "./../../images/change_language.svg";
 import {Projects, SantimentLogo} from "../header/Header";
 import styles from "./Footer.module.scss";
 import responsiveStyles from '../../utils/Responsive.module.scss'
+
 
 const About =
     <a
@@ -14,6 +15,15 @@ const About =
     >
       About
     </a>
+
+const Lang = <>
+  <img
+      alt="change_lang"
+      className={styles.langLogo}
+      src={chang_language}
+  />
+  English
+</>
 
 const Contact = <a
     target="_blank"
@@ -45,6 +55,10 @@ const Footer = () => {
             </a>
           </div>
 
+          <div className={cx(styles.lang, responsiveStyles.isDesktop)}>
+            {Lang}
+          </div>
+
           <div className={responsiveStyles.isDesktop}>
             {About}
             {Contact}
@@ -66,10 +80,14 @@ const Footer = () => {
           >
             Privacy
           </a>
+
+          <div className={cx(styles.lang, responsiveStyles.isMobile)}>
+            {Lang}
+          </div>
         </div>
 
         <div className={styles.right}>
-          © 2019 Santiment Inc. All rights reserved
+          © {new Date().getFullYear()} Santiment Inc. All rights reserved
         </div>
       </div>
     </footer>

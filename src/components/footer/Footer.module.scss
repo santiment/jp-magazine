@@ -35,6 +35,7 @@
     align-items: center;
     flex-direction: column;
     padding: 60px 0;
+    max-width: 170px;
     background: var(--mirage);
   }
 }
@@ -67,17 +68,20 @@
     margin: auto;
     color: $fiord;
     margin-top: 42px;
+    text-align: center;
   }
 }
 
 .lang {
   display: flex;
   align-items: center;
-  margin-right: 52px;
+  margin-right: 40px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     color: var(--waterloo);
     @include text('body-2');
+
+    flex-direction: row-reverse;
 
     margin: 32px 0 0 0;
   }

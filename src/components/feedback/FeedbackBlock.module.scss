@@ -10,11 +10,11 @@
   padding: 0 20px 20px 20px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
-    padding: 70px 16px;
+    padding: 80px 17px;
   }
 }
 
-.daysFree {
+.questions {
   @include text('h3');
 
   color: var(--white);
@@ -28,8 +28,8 @@
 }
 
 .form {
-  margin-top: 40px;
-  max-width: 316px;
+  margin-top: 21px;
+  max-width: 356px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     margin-top: 35px;
@@ -41,7 +41,7 @@
 
   color: var(--athens);
   text-align: center;
-  margin-top: 7px;
+  margin-top: 8px;
   max-width: 356px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
@@ -49,25 +49,12 @@
   }
 }
 
-.description {
-  @include text('body-2');
-
-  text-align: center;
-  color: var(--mystic);
-  margin-top: 42px;
-  max-width: 316px;
-
-  @include responsive('phone', 'phone-xs', 'tablet') {
-    margin-top: 60px;
-  }
-}
-
 .info {
   @include text('caption');
 
   color: var(--waterloo);
-  margin-top: 42px;
-  max-width: 298px;
+  margin-top: 16px;
+  max-width: 330px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     margin-top: 32px;

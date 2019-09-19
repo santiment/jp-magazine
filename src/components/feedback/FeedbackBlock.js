@@ -5,19 +5,12 @@ import styles from "./FeedbackBlock.module.scss";
 const FeedbackBlock = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.daysFree}>Get 30 Days Free</div>
+      <div className={styles.questions}>Questions?</div>
       <div className={styles.explanation}>
-        Yes! I’d like to try the Premium Sanbase
-        and Sansheets Bundle free for 30 days.
+          We’re here to help! Drop us a line and an representative will contact you shortly.
       </div>
       <div className={styles.form}>
         <SubscriptionForm />
-      </div>
-
-      <div className={styles.description}>
-        Get actionable intelligence about the
-        crypto market based on real network,
-        project and social activity.
       </div>
 
       <div className={styles.info}>
