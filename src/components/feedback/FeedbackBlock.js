@@ -5,10 +5,9 @@ import styles from "./FeedbackBlock.module.scss";
 const FeedbackBlock = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.questions}>Questions?</div>
+      <div className={styles.questions}>Special offer for our Gekkan Kasou Tuuka readers!</div>
       <div className={styles.explanation}>
-        We’re here to help! Drop us a line and an representative will contact
-        you shortly.
+          Subscribe to our weekly market insights and Get 25% off ANY Santiment product!
       </div>
       <div className={styles.form}>
         <SubscriptionForm />

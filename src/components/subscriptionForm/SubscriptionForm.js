@@ -11,6 +11,20 @@ import styles from "./SubscriptionForm.module.scss";
 
 const SUBSCRIPTION_FLAG = "SUBSCRIPTION_FLAG";
 
+
+/*
+*
+* <Label accent="waterloo" className={styles.label}>
+            Message
+          </Label>
+          <textarea
+            placeholder="Type your message here..."
+            disabled={waiting}
+            onChange={this.onMessageChangedDebounced}
+            className={styles.messageField}
+          ></textarea>
+* */
+
 class SubscriptionForm extends PureComponent {
   state = {
     email: "",
@@ -118,15 +132,7 @@ class SubscriptionForm extends PureComponent {
             )}
           </div>
 
-          <Label accent="waterloo" className={styles.label}>
-            Message
-          </Label>
-          <textarea
-            placeholder="Type your message here..."
-            disabled={waiting}
-            onChange={this.onMessageChangedDebounced}
-            className={styles.messageField}
-          ></textarea>
+
           <Button
             variant="fill"
             accent="positive"

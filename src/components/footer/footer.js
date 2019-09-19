@@ -80,10 +80,6 @@ const Footer = () => {
           >
             Privacy
           </a>
-
-          <div className={cx(styles.lang, responsiveStyles.isMobile)}>
-            {Lang}
-          </div>
         </div>
 
         <div className={styles.right}>

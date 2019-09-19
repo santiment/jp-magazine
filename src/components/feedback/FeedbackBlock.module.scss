@@ -17,9 +17,10 @@
 .questions {
   @include text('h3');
 
+  max-width: 419px;
   color: var(--white);
   text-align: center;
-  margin-top: 48px;
+  margin-top: 62px;
   font-weight: 600;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
@@ -28,7 +29,7 @@
 }
 
 .form {
-  margin-top: 21px;
+  margin-top: 30px;
   max-width: 356px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
@@ -41,8 +42,9 @@
 
   color: var(--athens);
   text-align: center;
-  margin-top: 8px;
-  max-width: 356px;
+  margin-top: 24px;
+  max-width: 290px;
+
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     margin-top: 22px;
