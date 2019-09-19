@@ -33,7 +33,7 @@ const Body = () => {
         </div>
 
         <div className={styles.explanation}>
-          <a className={styles.link} href='https://app.santiment.net'>Sanbase</a> is our flagship web application — learn about how crypto works, watch your favorite coins, and get insights into market behavior from an expert community. And yes, crypto is good for your portfolio!
+          <a className={styles.link} target="_blank" rel="noopener noreferrer" href='https://app.santiment.net'>Sanbase</a> is our flagship web application — learn about how crypto works, watch your favorite coins, and get insights into market behavior from an expert community. And yes, crypto is good for your portfolio!
         </div>
 
         <div className={styles.explanation}>
