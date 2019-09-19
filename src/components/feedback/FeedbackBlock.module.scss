@@ -57,9 +57,10 @@
   max-width: 330px;
 
   @include responsive('phone', 'phone-xs', 'tablet') {
-    margin-top: 32px;
+    margin-top: 16px;
     max-width: 100%;
     width: 100%;
+    @include text('body-3');
   }
 }
 

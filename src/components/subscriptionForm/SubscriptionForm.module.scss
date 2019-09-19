@@ -34,6 +34,7 @@
 
     @include responsive('phone', 'phone-xs', 'tablet') {
       height: 46px;
+      @include text('body-2');
     }
    }
 
@@ -47,7 +48,7 @@
     color: var(--white);
 
     @include responsive('phone', 'phone-xs', 'tablet') {
-      margin-top: 38px;
+      margin-top: 46px;
       width: 100%;
       display: block;
       position: relative;
@@ -80,6 +81,11 @@
   @include text('caption');
 
   font-size: 10px;
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    @include text('caption');
+    bottom: -20px;
+  }
 }
 
 .label {
@@ -92,6 +98,8 @@
 
   @include responsive('phone', 'phone-xs', 'tablet') {
     margin-bottom: 8px;
+    margin-top: 24px;
+    @include text('body-3');
   }
 }
 
@@ -136,6 +144,10 @@
   &.error {
     border-color: var(--persimmon);
   }
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    @include text('body-2');
+  }
 }
 
 .requiredSuffix {
@@ -145,5 +157,9 @@
 .requiredExplanation {
   margin: 32px auto 0 auto;
   color: var(--casper);
-  @include text('caption')
+  @include text('caption');
+
+  @include responsive('phone', 'phone-xs', 'tablet') {
+    margin-top: 40px;
+  }
 }
