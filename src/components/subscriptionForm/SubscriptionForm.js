@@ -59,7 +59,7 @@ class SubscriptionForm extends PureComponent {
     const { sendPromoCoupon } = this.props;
 
     let lang = 'en'
-    if (typeof window !== 'undefined' || typeof window.localStorage !== 'undefined') {
+    if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
      lang = localStorage.getItem('lang') || 'en'
    }
 
@@ -78,7 +78,7 @@ class SubscriptionForm extends PureComponent {
   };
 
   onSelect = (_, { selectedIndexes: { length } }) => {
-    if (typeof window !== 'undefined' || typeof window.localStorage !== 'undefined') {
+    if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
     if (!length) {
       localStorage.removeItem(SUBSCRIPTION_FLAG);
     } else {
