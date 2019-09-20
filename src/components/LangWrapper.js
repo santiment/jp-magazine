@@ -19,13 +19,13 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
 let language
 
 if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
-  language = localStorage.getItem('lang') || (messages[currentLanguage] ? currentLanguage : messages[DEFAULT_LANG])
+  language = localStorage.getItem('lang') || (messages[currentLanguage] ? currentLanguage : DEFAULT_LANG)
 
 	if(!localStorage.getItem('lang')){
 	    localStorage.setItem('lang', language)
 	}
 } else {
-	language = messages[currentLanguage] ? currentLanguage : messages[DEFAULT_LANG]
+	language = messages[currentLanguage] ? currentLanguage : DEFAULT_LANG
 }
 
 
