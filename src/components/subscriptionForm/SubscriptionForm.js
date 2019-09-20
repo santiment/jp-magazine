@@ -26,6 +26,11 @@ const SUBSCRIPTION_FLAG = "SUBSCRIPTION_FLAG";
           ></textarea>
 * */
 
+const LANG_ENUM = {
+  en: "EN",
+  ja: "JP"
+}
+
 class SubscriptionForm extends PureComponent {
   state = {
     email: "",
@@ -53,7 +58,9 @@ class SubscriptionForm extends PureComponent {
 
     const { sendPromoCoupon } = this.props;
 
-    sendPromoCoupon({ variables: { email, message } })
+    const lang = localStorage.getItem('lang') || 'en';
+
+    sendPromoCoupon({ variables: { email, message, lang: LANG_ENUM[lang] } })
       .then(() => {
         this.setState({ waiting: false });
         GoogleAnalytics.event({
