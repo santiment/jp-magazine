@@ -7,8 +7,8 @@
   "app.header.products.neuro": "Neuro",
 
   "app.footer.about": "About",
-  "app.footer.langs.en": "English",
-  "app.footer.langs.jp": "Japanese",
+  "app.footer.langs.en": "English (英語)",
+  "app.footer.langs.jp": "Japanese (日本語)",
   "app.footer.contact": "Contact us",
   "app.footer.support": "Support",
   "app.footer.terms": "Terms",

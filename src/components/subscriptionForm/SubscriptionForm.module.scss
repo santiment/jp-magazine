@@ -28,7 +28,8 @@
 
   &__input {
     @include text('body-3');
-    padding: 10px 136px 10px 12px;
+    width: 300px;
+    padding: 10px 12px;
     border: 1px solid var(--porcelain);
     height: 32px;
 
