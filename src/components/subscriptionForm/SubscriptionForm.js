@@ -58,7 +58,10 @@ class SubscriptionForm extends PureComponent {
 
     const { sendPromoCoupon } = this.props;
 
-    const lang = localStorage.getItem('lang') || 'en';
+    let lang = 'en'
+    if (typeof window !== 'undefined' || typeof window.localStorage !== 'undefined') {
+     lang = localStorage.getItem('lang') || 'en'
+   }
 
     sendPromoCoupon({ variables: { email, message, lang: LANG_ENUM[lang] } })
       .then(() => {
@@ -75,11 +78,13 @@ class SubscriptionForm extends PureComponent {
   };
 
   onSelect = (_, { selectedIndexes: { length } }) => {
+    if (typeof window !== 'undefined' || typeof window.localStorage !== 'undefined') {
     if (!length) {
       localStorage.removeItem(SUBSCRIPTION_FLAG);
     } else {
       localStorage.setItem(SUBSCRIPTION_FLAG, "+");
     }
+  }
   };
 
   onEmailChange(email) {
