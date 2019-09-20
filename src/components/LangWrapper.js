@@ -31,7 +31,9 @@ if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined')
 
 const LangWrapper = ({children}) => {
     return <IntlProvider locale={language} messages={messages[language]}>
+	<>
         {children}
+	</>
     </IntlProvider>
 }
 
