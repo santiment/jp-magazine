@@ -20,16 +20,20 @@ const About = (
 );
 
 const Lang = ({isDesktop, showArrow}) => {
-
-  const lang = localStorage.getItem('lang')
+  let lang = "en"
+  if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
+  lang = localStorage.getItem('lang')
+  }
 
   const setLang = (lang) => {
+    if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
     if(localStorage.getItem('lang') === lang){
       return
     }
 
     localStorage.setItem('lang', lang)
     window.location.reload()
+  }
   }
 
   return <Dropdown position='top' showArrow={showArrow} title={
