@@ -29,5 +29,9 @@
   "app.body.api.first": "Plus, if you’re a developer ready to build your own applications, a robust",
   "app.body.api.second": "is available to pump reliable, quickly accessible data into whatever you create.",
   "app.body.more.first": "For general information, learn more at",
-  "app.body.more.second": "."
+  "app.body.more.second": ".",
+
+  "app.body.thankyou.title": "Thank You!",
+  "app.body.thankyou.description": "Your request has been received. Check your email for next steps.",
+  "app.body.thankyou.more": "Learn more about the products:"
 }

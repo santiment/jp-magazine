@@ -29,5 +29,9 @@
   "app.body.api.first": "さらに、ディベロッパーの方には、",
   "app.body.api.second": "をご用意し、多様なニーズにお応えいたします。",
   "app.body.more.first": "詳細は、",
-  "app.body.more.second": "でご覧いただけます。"
+  "app.body.more.second": "でご覧いただけます。",
+
+  "app.body.thankyou.title": "お問い合わせありがとうございます。",
+  "app.body.thankyou.description": "メッセージは送信されました。担当者より追ってご連絡いたします。",
+  "app.body.thankyou.more": "Santiment　製品いついてもっと知る"
 }
