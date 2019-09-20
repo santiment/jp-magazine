@@ -1,7 +1,6 @@
 import React from "react";
 import cx from "classnames";
 import { Link } from "gatsby"
-import tr from "../../translations/translate";
 import FeedbackBlock from "../feedback/FeedbackBlock";
 import scrollDown from "./../../images/scroll_down.svg";
 import styles from "./Body.module.scss";
@@ -11,14 +10,14 @@ const Body = () => {
   return (
     <div className={styles.container}>
       <div key="left" className={styles.left}>
-        <div className={styles.description}>{tr('app.body.title')}</div>
+        <div className={styles.description}>Manage Risk.</div>
         <div className={cx(styles.description, styles.descriptionSecond)}>
-          {tr('app.body.description')}
+          Spot Opportunities.
         </div>
 
         <div className={cx(styles.line, responsiveStyles.isDesktop)}></div>
         <div className={cx(styles.scrollBlock, responsiveStyles.isMobile)}>
-          <div>{tr('app.body.scroll')}</div>
+          <div>Scroll to explore</div>
           <Link
             to="#welcome"
             className={styles.scrollIcon}
@@ -31,13 +30,14 @@ const Body = () => {
         </div>
 
         <h1 id="welcome" className={styles.welcome}>
-          {tr('app.body.welcome1')}{" "}
-          <span className={styles.welcomeMagazine}>{tr('app.body.welcome2')}</span>{" "}
-          {tr('app.body.welcome3')}
+          Welcome{" "}
+          <span className={styles.welcomeMagazine}>Gekkan Kasou Tuuka</span>{" "}
+          readers!
         </h1>
 
         <div className={styles.looking}>
-          {tr('app.body.looking')}
+          If you’re looking for ways to supplement your portfolio, or you just
+          want to learn more about crypto, you’re in the right place.
         </div>
 
         <div className={styles.explanation}>
@@ -47,9 +47,11 @@ const Body = () => {
             rel="noopener noreferrer"
             href="https://app.santiment.net"
           >
-            {tr('app.body.sanbase')}
+            Sanbase
           </a>{" "}
-          {tr('app.body.sanbase.description')}
+          is our flagship web application — learn about how crypto works, watch
+          your favorite coins, and get insights into market behavior from an
+          expert community. And yes, crypto is good for your portfolio!
         </div>
 
         <div className={styles.explanation}>
@@ -59,13 +61,16 @@ const Body = () => {
             rel="noopener noreferrer"
             href="https://sheets.santiment.net"
           >
-            {tr('app.body.sansheets')}
+            Sansheets
           </a>{" "}
-          {tr('app.body.sansheets.description')}
+          brings Santiment data into your Google spreadsheets. We have several
+          templates — including a portfolio template — available to get you
+          started.
         </div>
 
         <div className={styles.explanation}>
-          {tr('app.body.api.first')}{" "}
+          Plus, if you’re a developer ready to build your own applications, a
+          robust{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -74,11 +79,12 @@ const Body = () => {
           >
             API
           </a>{" "}
-          {tr('app.body.api.second')}
+          is available to pump reliable, quickly accessible data into whatever
+          you create.
         </div>
 
         <div className={styles.explanation}>
-          {tr('app.body.more.first')}{" "}
+          For general information, learn more at{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -87,7 +93,7 @@ const Body = () => {
           >
             santiment.net/jp/
           </a>
-          {tr('app.body.more.second')}
+          .
         </div>
       </div>
       <div name="reply" key="right" className={styles.right}>
