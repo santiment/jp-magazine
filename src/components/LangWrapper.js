@@ -11,7 +11,10 @@ const messages = {
 
 
 const DEFAULT_LANG = 'en'
-const currentLanguage = navigator.language.split(/[-_]/)[0];
+let currentLanguage
+if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
+  currentLanguage = window.navigator.language.split(/[-_]/)[0];
+}
 
 const language = localStorage.getItem('lang')
     || (messages[currentLanguage] ? currentLanguage : DEFAULT_LANG)
