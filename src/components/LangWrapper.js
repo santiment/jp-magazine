@@ -16,12 +16,18 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
   currentLanguage = window.navigator.language.split(/[-_]/)[0];
 }
 
-const language = localStorage.getItem('lang')
-    || (messages[currentLanguage] ? currentLanguage : DEFAULT_LANG)
+let language
 
-if(!localStorage.getItem('lang')){
-    localStorage.setItem('lang', language)
+if (typeof window !== 'undefined' || typeof window.localStorage !== 'undefined') {
+  language = localStorage.getItem('lang') || (messages[currentLanguage] ? currentLanguage : messages[DEFAULT_LANG])
+
+	if(!localStorage.getItem('lang')){
+	    localStorage.setItem('lang', language)
+	}
+} else {
+	language = messages[currentLanguage] ? currentLanguage : messages[DEFAULT_LANG]
 }
+
 
 const LangWrapper = ({children}) => {
     return <IntlProvider locale={language} messages={messages[language]}>
