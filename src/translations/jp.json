@@ -13,5 +13,21 @@
   "app.footer.support": "サポート",
   "app.footer.terms": "契約条件",
   "app.footer.privacy": "プライバシー",
-  "app.footer.rights": "Santiment, Inc. 無断複写・転載を禁じます。"
+  "app.footer.rights": "Santiment, Inc. 無断複写・転載を禁じます。",
+
+  "app.body.title": "リスクを管理し",
+  "app.body.description": "チャンスをつかみましょう",
+  "app.body.scroll": " ",
+  "app.body.welcome1": "月刊仮想通貨読者の皆様へ",
+  "app.body.welcome2": " ",
+  "app.body.welcome3": " ",
+  "app.body.looking": "当サイトで、仮想通貨に関する様々な情報をご確認いただけます。",
+  "app.body.sanbase": "SANベース",
+  "app.body.sanbase.description": "SANベースでは、仮想通貨基本情報、気になるコインの動き、エキスパートによるマーケット指標等、様々情報が得られます。",
+  "app.body.sansheets": "SANシート",
+  "app.body.sansheets.description": "Santiment データをGoogle スプレッドシートでご覧になれます。様々な分析にご活用いただけるよう、テンプレートを多数ご用意いたしました。",
+  "app.body.api.first": "さらに、ディベロッパーの方には、",
+  "app.body.api.second": "をご用意し、多様なニーズにお応えいたします。",
+  "app.body.more.first": "詳細は、",
+  "app.body.more.second": "でご覧いただけます。"
 }
