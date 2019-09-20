@@ -6,7 +6,7 @@ import arrowUp from "./../../images/arrow-up.svg";
 import arrowDown from "./../../images/arrow-down.svg";
 import styles from "./Dropdown.module.scss";
 
-const Dropdown = ({ children, isDesktop }) => {
+const Dropdown = ({ title, children, isDesktop, position='bottom', showArrow=false }) => {
   const [isOpen, setOpen] = useState(false);
   const close = force => {
     setTimeout(
@@ -28,11 +28,11 @@ const Dropdown = ({ children, isDesktop }) => {
             onClose={() => close(true)}
             onOpen={open}
             trigger={
-              <div>
-                <ProjectsTrigger isOpen={isOpen} />
+              <div  className={styles.trigger}>
+                <ProjectsTrigger title={title} isOpen={isOpen} />
               </div>
             }
-            position="bottom"
+            position={position}
             align="start"
           >
             {children}
@@ -43,7 +43,8 @@ const Dropdown = ({ children, isDesktop }) => {
         <div>
           <>
             <ProjectsTrigger
-              showArrow
+              title={title}
+              showArrow={showArrow}
               isOpen={isOpen}
               onClick={() => {
                 setOpen(!isOpen);
@@ -57,7 +58,7 @@ const Dropdown = ({ children, isDesktop }) => {
   );
 };
 
-const ProjectsTrigger = ({ onClick, isOpen, showArrow }) => {
+const ProjectsTrigger = ({ title, onClick, isOpen, showArrow }) => {
   return (
     <Button
       onClick={onClick}
@@ -65,7 +66,7 @@ const ProjectsTrigger = ({ onClick, isOpen, showArrow }) => {
       as="a"
       className={cx(styles.productsBtn, isOpen && styles.open)}
     >
-      Products
+      {title}
       {showArrow && (
         <>
           {isOpen && <img alt="up" className={styles.arrow} src={arrowUp} />}
