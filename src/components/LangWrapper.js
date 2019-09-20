@@ -18,7 +18,7 @@ if (typeof window !== 'undefined' && typeof window.navigator !== 'undefined') {
 
 let language
 
-if (typeof window !== 'undefined' || typeof window.localStorage !== 'undefined') {
+if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
   language = localStorage.getItem('lang') || (messages[currentLanguage] ? currentLanguage : messages[DEFAULT_LANG])
 
 	if(!localStorage.getItem('lang')){
