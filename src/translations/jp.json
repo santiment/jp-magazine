@@ -33,5 +33,13 @@
 
   "app.body.thankyou.title": "お問い合わせありがとうございます。",
   "app.body.thankyou.description": "メッセージは送信されました。担当者より追ってご連絡いたします。",
-  "app.body.thankyou.more": "Santiment　製品いついてもっと知る"
+  "app.body.thankyou.more": "Santiment　製品いついてもっと知る",
+
+  "app.body.form.title": "月刊仮想通貨読者の皆様へのスペシャルオファー",
+  "app.body.form.description": "Santimentの週刊マーケットインサイトお申込み頂くと、どのプロダクトも２５％オフに！",
+  "app.body.form.privacy": "*印の項目は必ずご記入頂けますようお願いいたします。",
+  "app.body.form.privacy.link": "ご提供いただいた情報は当社のプライベートポリシーに準拠して活用させていただきます。",
+  "app.body.form.email": "メールアドレス ",
+  "app.body.form.button": "送信",
+  "app.body.form.button.waiting": "送信"
 }

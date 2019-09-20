@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { navigate } from "gatsby";
 import cx from "classnames";
+import tr from "../../translations/translate";
 import GoogleAnalytics from "react-ga";
 import { graphql } from "react-apollo";
 import Label from "@santiment-network/ui/Label";
@@ -116,7 +117,7 @@ class SubscriptionForm extends PureComponent {
         >
           <div className={styles.emailBlock}>
             <Label accent="waterloo" className={styles.label}>
-              Email address <span className={styles.requiredSuffix}>*</span>
+              {tr('app.body.form.email')} <span className={styles.requiredSuffix}>*</span>
             </Label>
             <Input
               className={styles.subscription__input}
@@ -140,12 +141,8 @@ class SubscriptionForm extends PureComponent {
             disabled={waiting}
             type="submit"
           >
-            {waiting ? "Waiting..." : "Let’s Go"}
+            {waiting ? tr('app.body.form.button.waiting') : tr('app.body.form.button')}
           </Button>
-
-          <div className={styles.requiredExplanation}>
-            <span className={styles.requiredSuffix}>*</span> Required field
-          </div>
         </form>
       </>
     );
