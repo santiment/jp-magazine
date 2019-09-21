@@ -7,11 +7,14 @@
   "app.header.products.neuro": "Neuro",
 
   "app.footer.about": "About",
+  "app.footer.about.link": "https://santiment.net/about-santiment/",
   "app.footer.langs.en": "English (英語)",
   "app.footer.langs.jp": "Japanese (日本語)",
   "app.footer.contact": "Contact us",
+  "app.footer.contact.link": "https://santiment.net/about-santiment/contact/",
   "app.footer.support": "Support",
   "app.footer.terms": "Terms",
+  "app.footer.terms.link": "https://santiment.net/terms-conditions/",
   "app.footer.privacy": "Privacy",
   "app.footer.rights": "Santiment Inc. All rights reserved",
 
@@ -36,7 +39,7 @@
   "app.body.thankyou.more": "Learn more about the products:",
 
   "app.body.form.title": "Special offer for our Gekkan Kasou Tuuka readers!",
-  "app.body.form.description": "Subscribe to our weekly market insights and Get 25% off ANY Santiment product!",
+  "app.body.form.description": "Subscribe to the monthly newsletter to receive Santiment original metrics, deals and updates.",
   "app.body.form.privacy": "Starred fields are required to process your request. The information above helps us to help us better understand our audience. All information is used consistent with our",
   "app.body.form.privacy.link": "privacy policy.",
   "app.body.form.email": "Email address",

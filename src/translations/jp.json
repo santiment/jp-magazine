@@ -1,17 +1,20 @@
 {
-  "app.header.products": "ラボ",
+  "app.header.products": "プロダクト",
   "app.header.support": "サポート",
   "app.header.signup": "サインアップ",
   "app.header.products.sanbase": "SANベース",
-  "app.header.products.sheets": "SANベース",
-  "app.header.products.neuro": "ニューロ",
+  "app.header.products.sheets": "SANシート",
+  "app.header.products.neuro": "API",
 
   "app.footer.about": "Santimentについて",
+  "app.footer.about.link": "https://santiment.net/jp/about-santiment/",
   "app.footer.langs.en": "英語 (English)",
   "app.footer.langs.jp": "日本語 (Japanese)",
   "app.footer.contact": "お問いあわせ先",
+  "app.footer.contact.link": "https://santiment.net/jp/about-santiment/contact/",
   "app.footer.support": "サポート",
   "app.footer.terms": "契約条件",
+  "app.footer.terms.link": "https://santiment.net/jp/terms-conditions/",
   "app.footer.privacy": "プライバシー",
   "app.footer.rights": "Santiment, Inc. 無断複写・転載を禁じます。",
 
@@ -36,7 +39,7 @@
   "app.body.thankyou.more": "Santiment　製品いついてもっと知る",
 
   "app.body.form.title": "月刊仮想通貨読者の皆様へのスペシャルオファー",
-  "app.body.form.description": "Santimentの週刊マーケットインサイトお申込み頂くと、どのプロダクトも２５％オフに！",
+  "app.body.form.description": "ニューズレターを購読して、Santimentオリジナル指標、お得な情報、最新情報を受け取りましょう。",
   "app.body.form.privacy": "*印の項目は必ずご記入頂けますようお願いいたします。",
   "app.body.form.privacy.link": "ご提供いただいた情報は当社のプライベートポリシーに準拠して活用させていただきます。",
   "app.body.form.email": "メールアドレス ",
