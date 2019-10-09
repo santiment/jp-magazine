@@ -17,8 +17,8 @@ export const SantimentLogo = ({ white }) => (
   />
 );
 
-export const Projects = ({ isDesktop }) => (
-  <Dropdown title={tr('app.header.products')} isDesktop={isDesktop}>
+export const Projects = ({ isDesktop, showArrow }) => (
+  <Dropdown title={tr('app.header.products')} showArrow={showArrow} isDesktop={isDesktop}>
     <div className={dropdownStyles.list}>
       <a
         className={cx(styles.link, dropdownStyles.menuItem)}

@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
 
           <div className={cx(responsiveStyles.isMobile, styles.center)}>
-            {<Projects showArrow />}
+            {<Projects showArrow={true} />}
             <a
               className={styles.link}
               rel="noopener noreferrer"
@@ -113,7 +113,7 @@ const Footer = () => {
           </a>
 
           <div className={cx(responsiveStyles.isMobile)}>
-            {<Lang showArrow={false}/>}
+            {<Lang showArrow={true}/>}
           </div>
         </div>
 
