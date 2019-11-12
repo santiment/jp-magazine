@@ -6,6 +6,13 @@
   "app.header.products.sheets": "SANシート",
   "app.header.products.neuro": "API",
 
+  "header.products": "Santiment製品",
+  "header.santiment.goto": "Santiment.netにアクセス",
+
+  "header.product.sanbase": "1000以上の暗号資産の動作分析および監視プラットフォーム",
+  "header.product.sheets": "SantimentデータをインポートするためのGoogle Spreadsheetsプラグイン",
+  "header.product.neuro": "市場で最も包括的な暗号API",
+
   "app.footer.about": "Santimentについて",
   "app.footer.about.link": "https://santiment.net/jp/about-santiment/",
   "app.footer.langs.en": "英語 (English)",

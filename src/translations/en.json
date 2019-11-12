@@ -6,6 +6,13 @@
   "app.header.products.sheets": "Sheets",
   "app.header.products.neuro": "Neuro",
 
+  "header.products": "Santiment products",
+  "header.santiment.goto": "Go to Santiment.net",
+
+  "header.product.sanbase": "Behavior analysis & monitoring platform for 1000+ crypto assets",
+  "header.product.sheets": "Google Spreadsheets plugin for importing Santiment data",
+  "header.product.neuro": "The most comprehsive crypto API on the market",
+
   "app.footer.about": "About",
   "app.footer.about.link": "https://santiment.net/about-santiment/",
   "app.footer.langs.en": "English (英語)",

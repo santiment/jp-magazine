@@ -6,15 +6,18 @@ import santimentWhite from "../../../src/images/santiment-white.svg";
 import Dropdown from "../dropdown/Dropdown";
 import dropdownStyles from "../dropdown/Dropdown.module.scss";
 import Button from "@santiment-network/ui/Button";
+import SantimentProductsTooltip from "../SantimentProductsTooltip/SantimentProductsTooltip";
 import responsiveStyles from "../../utils/Responsive.module.scss";
 import styles from "./Header.module.scss";
 
 export const SantimentLogo = ({ white }) => (
-  <img
-    alt="header-logo"
-    src={white ? santimentWhite : santiment}
-    className={styles.logo}
-  />
+  <a href='/'>
+    <img
+        alt="header-logo"
+        src={white ? santimentWhite : santiment}
+        className={styles.logo}
+    />
+  </a>
 );
 
 export const Projects = ({ isDesktop, showArrow }) => (
@@ -56,9 +59,11 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <SantimentLogo />
+        <div className={styles.products}>
+          <SantimentProductsTooltip/>
+        </div>
 
         <div className={cx(styles.buttons, responsiveStyles.isDesktop)}>
-          {<Projects isDesktop={true} />}
           <a
             className={styles.link}
             rel="noopener noreferrer"
@@ -68,9 +73,9 @@ const Header = () => {
           </a>
           <Button
             as="a"
+            variant="fill"
             target="_blank"
             accent="positive"
-            border
             rel="noopener noreferrer"
             className={styles.borderLink}
             href="https://app.santiment.net/login"

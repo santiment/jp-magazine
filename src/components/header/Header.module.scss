@@ -36,12 +36,11 @@
   text-align: center;
   display: table-cell;
   width: 118px;
-  margin-left: 49px;
+  margin-left: 32px;
+}
 
-  &:hover {
-    background: var(--jungle-green);
-    color: var(--white);
-  }
+.products {
+  margin-left: 8px;
 }
 
 .container {
@@ -56,12 +55,8 @@
 }
 
 .logo {
-  height: 26px;
-
-  @include responsive('phone', 'phone-xs', 'tablet') {
-    width: 160px;
-    height: 35px;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .buttons {
