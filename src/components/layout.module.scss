@@ -20,6 +20,14 @@ body {
   }
 }
 
+a {
+  color: var(--jungle-green);
+
+  &:hover {
+    color: var(--jungle-green-hover);
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
