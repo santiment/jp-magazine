@@ -11,13 +11,11 @@ import responsiveStyles from "../../utils/Responsive.module.scss";
 import styles from "./Header.module.scss";
 
 export const SantimentLogo = ({ white }) => (
-  <a href='/'>
-    <img
-        alt="header-logo"
-        src={white ? santimentWhite : santiment}
-        className={styles.logo}
-    />
-  </a>
+  <img
+      alt="header-logo"
+      src={white ? santimentWhite : santiment}
+      className={styles.logo}
+  />
 );
 
 export const Projects = ({ isDesktop, showArrow }) => (
@@ -58,9 +56,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <SantimentLogo />
         <div className={styles.products}>
-          <SantimentProductsTooltip/>
+          <SantimentProductsTooltip>
+            <SantimentLogo />
+          </SantimentProductsTooltip>
         </div>
 
         <div className={cx(styles.buttons, responsiveStyles.isDesktop)}>
