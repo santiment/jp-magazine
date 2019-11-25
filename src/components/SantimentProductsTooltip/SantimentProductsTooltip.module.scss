@@ -97,7 +97,6 @@
   transform-style: preserve-3d;
   transition-duration: 0.3s;
 
-
   &__img {
     height: 38px;
   }
@@ -131,8 +130,10 @@
   align-items: center;
   justify-content: center;
   color: var(--waterloo);
-  margin-left: 8px;
+  margin-left: 4px;
   fill: var(--waterloo);
+  cursor: pointer;
+  margin-top: 1px;
 }
 
 .opened {
@@ -144,4 +145,9 @@
 .trigger {
   display: flex;
   align-items: center;
+}
+
+.arrowIcon {
+  width: 8px;
+  height: 5px;
 }
